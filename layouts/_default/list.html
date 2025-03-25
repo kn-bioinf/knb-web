@@ -1,0 +1,121 @@
+<!DOCTYPE HTML>
+<!--
+	Stellar by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>KNB UW</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="/css/main.css?v=2" />
+		<noscript><link rel="stylesheet" href="/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header" class="alt">
+
+						<h1>Aktualności</h1>
+
+					</header>
+
+
+
+
+				<!-- Main - O nas -->
+					<div id="main">
+
+
+
+						<!-- First Section - Aktualności-->
+							<section id="first" class="main special">
+
+								
+								<!-- Ograniczone do pięciu najnowszych - może paginacje? -->
+								
+									{{ $paginator := .Paginate (where .Site.RegularPages "Section" "aktualnosci") 2 }}
+
+									{{ range $paginator.Pages }}
+									    <article>
+									        <div class="article-content">
+									            <h3>
+									                {{ .Params.Title }}
+									            </h3>
+									            <p>{{ .Params.Summary }}Nam elementum nisl et mi a commodo porttitor. Morbi sit amet nisl eu arcu faucibus hendrerit vel a risus. Nam a orci mi, elementum ac arcu sit amet, fermentum pellentesque et purus. Integer maximus varius lorem, sed convallis diam accumsan sed. Etiam porttitor placerat sapien, sed eleifend a enim pulvinar faucibus semper quis ut arcu.</p>
+									            <p>{{ .Params.Date.Format "2.01.2006" }}</p>
+									            <a href="{{ .Permalink }}" class="button primary">Czytaj więcej</a>
+									        </div>
+
+									        {{ if .Params.image }}
+									            <span class="image_posts">
+									                <img src="{{ .Params.image }}" alt="{{ .Title }}">
+									            </span>
+									        {{ end }}
+									    </article>
+									{{ end }}
+
+									<div class="pagination">
+									    {{ if $paginator.HasPrev }}
+									        <a href="{{ $paginator.First.URL }}" class="button_pag">⏮</a>
+									        <a href="{{ $paginator.Prev.URL }}" class="button_pag">◀</a>
+									    {{ end }}
+
+									    <span class="current-page">Strona {{ $paginator.PageNumber }} z {{ $paginator.TotalPages }}</span>
+
+									    {{ if $paginator.HasNext }}
+									        <a href="{{ $paginator.Next.URL }}" class="button_pag">▶</a>
+									        <a href="{{ $paginator.Last.URL }}" class="button_pag">⏭</a>
+									    {{ end }}
+									</div>
+
+
+
+
+							</section>
+
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<section id="kontakt">
+							
+							<h2>Kontakt</h2>
+							<dl class="alt">
+								<dt>Address</dt>
+								<dd>Stefana Banacha 2 &bull; Warszawa, 02-097</dd>
+								<dt>Email</dt>
+								<dd><a href="#">information@untitled.tld</a></dd>
+							</dl>
+							<ul class="icons">
+								
+								<li><a href="https://www.facebook.com/Bioinformatyka.UW/" target='_blank' class="icon brands fa-facebook-f alt"><span class="label">Facebook</span></a></li>
+								<li><a href="https://www.instagram.com/bioinformatyka_uw/" target='_blank' class="icon brands fa-instagram alt"><span class="label">Instagram</span></a></li>
+								
+							</ul>
+
+						</section>
+
+						<section>
+							<span class="mimuw"><img src="/images/logo_wydzialu.svg" alt="" /></span>
+						</section>	
+						<p class="copyright">&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="/js/jquery.min.js"></script>
+			<script src="/js/jquery.scrollex.min.js"></script>
+			<script src="/js/jquery.scrolly.min.js"></script>
+			<script src="/js/browser.min.js"></script>
+			<script src="/js/breakpoints.min.js"></script>
+			<script src="/js/util.js"></script>
+			<script src="/js/main.js"></script>
+
+	</body>
+</html>
