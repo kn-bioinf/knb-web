@@ -1,0 +1,4 @@
+baseURL = 'https://example.org/'
+languageCode = 'pl-PL'
+title = 'My New Hugo Site'
+paginate = 5
