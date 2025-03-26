@@ -1,5 +1,5 @@
 +++
 name = 'Stanisław'
-surname = 'Stanowski'
+surname = 'Gołębiewski'
 role = 'Prezes'
 +++
