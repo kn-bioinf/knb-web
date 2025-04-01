@@ -4,7 +4,7 @@ date = '2025-02-01'
 draft = 'false'
 tags = ['nauka', 'zabawa']
 summary = ""
-image = '/images/temp_draft.png'
+image = 'images/temp_draft.png'
 +++
 
 <!-- Tutaj START - cała treść posta -->
