@@ -1,4 +1,4 @@
-baseURL = 'https://mimuw.edu.pl/~bioinformatyka/'
+baseURL = '/'
 languageCode = 'pl-PL'
 title = 'My New Hugo Site'
 pagerSize = 5
