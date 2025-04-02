@@ -47,7 +47,7 @@
 
 									        {{ if .Params.image }}
 									            <span class="image_posts">
-									                <img src="{{ .Params.image }}" alt="{{ .Title }}">
+									                <img src="{{ .Params.image | absURL }}" alt="{{ .Title }}">
 									            </span>
 									        {{ end }}
 									    </article>
