@@ -9,8 +9,8 @@
 		<title>KNB UW</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="/css/main.css?v=2" />
-		<noscript><link rel="stylesheet" href="/css/noscript.css" /></noscript>
+		<link rel="stylesheet" href="{{ "css/main.css?v=2" | absURL }}" />
+		<noscript><link rel="stylesheet" href="{{ "css/noscript.css" | absURL }}" /></noscript>
 	</head>
 	<body class="is-preload">
 
@@ -24,18 +24,12 @@
 
 					</header>
 
-
-
-
 				<!-- Main - O nas -->
 					<div id="main">
-
-
 
 						<!-- First Section - Aktualności-->
 							<section id="first" class="main special">
 
-								
 								<!-- Ograniczone do pięciu najnowszych - może paginacje? -->
 								
 									{{ $paginator := .Paginate (where .Site.RegularPages "Section" "aktualnosci") 2 }}
@@ -73,9 +67,6 @@
 									    {{ end }}
 									</div>
 
-
-
-
 							</section>
 
 					</div>
@@ -101,7 +92,7 @@
 						</section>
 
 						<section>
-							<span class="mimuw"><img src="/images/logo_wydzialu.svg" alt="" /></span>
+							<span class="mimuw"><img src="{{ "images/logo_wydzialu.svg" | absURL }}" alt="" /></span>
 						</section>	
 						<p class="copyright">&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
 					</footer>
@@ -109,13 +100,13 @@
 			</div>
 
 		<!-- Scripts -->
-			<script src="/js/jquery.min.js"></script>
-			<script src="/js/jquery.scrollex.min.js"></script>
-			<script src="/js/jquery.scrolly.min.js"></script>
-			<script src="/js/browser.min.js"></script>
-			<script src="/js/breakpoints.min.js"></script>
-			<script src="/js/util.js"></script>
-			<script src="/js/main.js"></script>
+			<script src="{{ "js/jquery.min.js" | absURL }}"></script>
+			<script src="{{ "js/jquery.scrollex.min.js" | absURL }}"></script>
+			<script src="{{ "js/jquery.scrolly.min.js" | absURL }}"></script>
+			<script src="{{ "js/browser.min.js" | absURL }}"></script>
+			<script src="{{ "js/breakpoints.min.js" | absURL }}"></script>
+			<script src="{{ "js/util.js" | absURL }}"></script>
+			<script src="{{ "js/main.js" | absURL }}"></script>
 
 	</body>
 </html>
