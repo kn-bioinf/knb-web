@@ -3,7 +3,7 @@ title = 'Spotkanie z doktorem Krzysztofem Gogolewskim'
 date = '2025-05-12'
 draft = 'false'
 tags = ['nauka', 'zabawa']
-summary = "15 maja odwiedzi nas doktor Krzysztof Gogolewski w prezentacją \"After hours: let's talk bioinformatics!\""
+summary = "15 maja odwiedzi nas doktor Krzysztof Gogolewski z prezentacją \"After hours: let's talk bioinformatics!\""
 image = 'images/gogolewski.jpg'
 +++
 
