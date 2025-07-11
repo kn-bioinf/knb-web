@@ -4,7 +4,7 @@ date = '2025-05-27'
 draft = 'false'
 tags = ['nauka', 'zabawa']
 summary = "W dniach 23-25 maja uczestniczyliśmy w konferencji studenckich kół naukowych BioMeeting 2025!"
-image = 'images/biomeeting.jpg'
+image = '/images/biomeeting.jpg'
 +++
 
 <!-- Tutaj START - cała treść posta -->
