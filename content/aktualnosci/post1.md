@@ -8,10 +8,8 @@ summary = "Tutaj tekst, który będzie wyświetlany w liście aktualności"
 
 <!-- Tutaj START - cała treść posta -->
 
-### Opis
+### Opis ładny
 Pan kiedyś stanął nad brzegiem
-
-A Aga tu była
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ligula metus, hendrerit nec velit pharetra, rhoncus sollicitudin eros. Aenean turpis erat, euismod consequat semper at, rutrum id purus. Ut sed mi lorem. Mauris feugiat justo turpis, eget interdum metus interdum eu. Fusce vel purus quis arcu faucibus imperdiet. Fusce tristique mauris quis augue scelerisque aliquet. Nullam ac dui vestibulum, faucibus quam ut, imperdiet neque. Praesent vitae feugiat turpis. Mauris feugiat felis in hendrerit tristique.
 
