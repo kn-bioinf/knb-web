@@ -4,6 +4,7 @@ date = '2025-04-01'
 draft = 'false'
 tags = ['nauka', 'zabawa']
 summary = "29 marca prowadziliśmy warsztaty bioinformatyczne na konferencji naukowej Biofuzje 2025"
+image = '/images/biofuzje2025.jpg'
 +++
 
 <!-- Tutaj START - cała treść posta -->
