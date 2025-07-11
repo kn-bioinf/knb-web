@@ -32,11 +32,11 @@
 								<!-- Wstawienie obrazka, jeśli istnieje, w treści -->
 
 								<div class='article_content_post'>
-						        {{ if .Params.image }}
-						            <span class="image_posts_single">
-						                <img src="{{ .Params.image }}">
-						            </span>
-						        {{ end }}
+								{{ if .Params.image }}
+								        <span class="image_posts_single">
+								        <img src="{{ .Params.image }}" alt="{{ .Title}}">
+									</span>
+								{{ end }}
 
 								<p>{{ .Content}}</p>
 								<p>{{ .Params.Date.Format "2.01.2006" }}</p>
