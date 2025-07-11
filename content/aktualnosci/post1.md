@@ -1,18 +1,19 @@
 +++
-title = 'Wzorcowy post w aktualnościach'
-date = '2025-02-01'
+title = 'BioMeeting 2025'
+date = '2025-05-27'
 draft = 'false'
 tags = ['nauka', 'zabawa']
-summary = "Tutaj tekst, który będzie wyświetlany w liście aktualności"
+summary = "W dniach 23-25 maja uczestniczyliśmy w konferencji studenckich kół naukowych BioMeeting 2025"
 +++
 
 <!-- Tutaj START - cała treść posta -->
 
-### Opis ładny
-Pan kiedyś stanął nad brzegiem
+### BioMeeting 2025
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ligula metus, hendrerit nec velit pharetra, rhoncus sollicitudin eros. Aenean turpis erat, euismod consequat semper at, rutrum id purus. Ut sed mi lorem. Mauris feugiat justo turpis, eget interdum metus interdum eu. Fusce vel purus quis arcu faucibus imperdiet. Fusce tristique mauris quis augue scelerisque aliquet. Nullam ac dui vestibulum, faucibus quam ut, imperdiet neque. Praesent vitae feugiat turpis. Mauris feugiat felis in hendrerit tristique.
+BioMeeting 2025🌿
 
-Curabitur tristique gravida diam, at consequat lectus sollicitudin quis. Praesent massa lectus, accumsan quis metus vel, rutrum pretium ligula. Duis pretium sed odio eu malesuada. Etiam sit amet enim consequat, viverra ligula eget, luctus ligula. Suspendisse potenti. Morbi volutpat sem vitae malesuada suscipit. Vestibulum vel enim odio. Proin justo erat, vestibulum eu tincidunt vestibulum, consequat ut nibh. Nam sapien orci, vehicula vel sagittis eget, dapibus faucibus mi. Curabitur quis lacus massa. Aliquam tincidunt orci eget urna ullamcorper, sit amet malesuada risus eleifend. Nullam at gravida magna. Fusce elementum massa vitae lorem tristique auctor. Nulla rutrum in arcu ut laoreet. Sed consectetur cursus condimentum. Nulla efficitur purus quis lectus eleifend, et interdum orci auctor.
+W dniach 23-25 maja uczestniczyliśmy w konferencji studenckich kół naukowych. W trakcie wyjazdu odbywały się wykłady, sesje posterowe (na których mieliśmy okazję zaprezentować swoje badania i działalność naszego Koła), integracyjne ogniska i wycieczki. 🎒🧠
 
-Sed vestibulum pharetra nulla, nec fermentum sem bibendum ut. Proin placerat pellentesque orci, et sollicitudin sapien pellentesque ac. Praesent finibus placerat mollis. Morbi laoreet vestibulum est vel suscipit. Ut non vulputate velit, eget maximus purus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Fusce cursus leo velit, pharetra lacinia nunc varius nec.
+W wydarzeniu towarzyszyli nam dr Aleksander Jankowski oraz dr Damian Wójtowicz. Dziękujemy za dzielenie się swoją wiedzą! 👨‍🏫
+
+Dziękujemy także organizatorom, czyli Kołu Naukowemu #In Silico# Uniwersytetu Jagiellońskiego oraz pozostałym Kołom: #Kołu Naukowemu Bioinformatyki# Politechniki Poznańskiej, #BioNanopor# z Politechniki Wrocławskiej, #BioSKN# z Politechniki Śląskiej oraz #Signum# z Politechniki Wrocławskiej. Do zobaczenia w przyszłym roku! 💚
