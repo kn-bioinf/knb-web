@@ -1,5 +1,5 @@
 +++
 name = 'Agnieszka'
 surname = 'Prudło'
-role = 'Członkini zarządu'
+role = 'Najlepsza Członkini zarządu'
 +++
