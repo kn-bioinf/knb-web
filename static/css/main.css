@@ -2671,7 +2671,8 @@ input, select, textarea {
   	}
 
   	span.image_posts {
-		float: right;
+		display: flex;
+		justify-content: flex-end;
 
   
   	}
