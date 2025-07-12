@@ -14,3 +14,5 @@ image = 'images/biofuzje2025.jpg'
 Wspólnie poznawaliśmy sposoby analizy informacji uzyskanych metodą scRNA-seq oraz automatyzowaliśmy przetwarzanie danych przy pomocy biblioteki BioPython.
 
 Bardzo dziękujemy za zaproszenie!
+
+[Więcej informacji](https://konferencjabiofuzje.com/)
