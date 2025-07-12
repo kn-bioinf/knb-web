@@ -2674,12 +2674,10 @@ input, select, textarea {
 
   	span.image_posts {
 		display: flex;
-
-  
+		justify-content: flex-end;
   	}
-  	  	span.image_posts img{
+  	span.image_posts img{
   		width: 20em;
-  
   	}
 
 
