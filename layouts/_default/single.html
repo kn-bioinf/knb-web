@@ -20,7 +20,13 @@
 
 				<!-- Header -->
 					<header id="header">
-						<span class="logo"><img src="{{ "images/logo_kola.jpg" | absURL }}" alt="" /></span>
+						
+						<a href="{{ "/" | relURL }}">
+							<span class="logo">
+								<img src="{{ "images/logo_kola.jpg" | absURL }}" alt="Logo" />
+							</span>
+						</a>
+						
 						<h1>Koło Naukowe Bioinformatyki UW</h1>
 						<h1>{{ .Title}}</h1>
 					</header>
