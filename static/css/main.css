@@ -180,13 +180,6 @@ input, select, textarea {
 			border-bottom-color: transparent;
 		}
 
-	a.mimuw_logo {
-		border-bottom: none;
-		display: inline-block;
-		width: 60%;
-    		height: auto;
-	}
-
 
 	strong, b {
 		font-weight: 400;
@@ -3851,12 +3844,14 @@ input, select, textarea {
 			text-align: center;
 		}
 		
-		footer .mimuw {
+		footer a.mimuw {
     			display: inline-block;
     			text-align: right;
     			margin-right: 0;
+			width: auto !important;
 			}
-		footer .mimuw img {
+
+		footer a.mimuw img {
 			width: 60% ;
     			max-width: 100%;
     			height: auto;
