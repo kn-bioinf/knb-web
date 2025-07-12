@@ -37,9 +37,6 @@ section, summary, time, mark, audio, video {
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;}
-h1 {
-	color: red;
-}
 
 
 p {
@@ -115,13 +112,13 @@ input, select, textarea {
 		box-sizing: inherit;
 	}
 
-	body {
+	/*body {
 		background-color: #348665;
 		background-image: url("images/overlay.png"), -moz-linear-gradient(45deg, #1eba7a 15%, #123525 85%);
 		background-image: url("images/overlay.png"), -webkit-linear-gradient(45deg, #1eba7a 15%, #123525 85%);
 		background-image: url("images/overlay.png"), -ms-linear-gradient(45deg, #1eba7a 15%, #123525 85%);
 		background-image: url("images/overlay.png"), linear-gradient(45deg, #1eba7a 15%, #123525 85%);
-	}
+	}*/
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
 			-moz-animation: none !important;
