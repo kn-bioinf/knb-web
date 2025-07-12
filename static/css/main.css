@@ -3847,8 +3847,7 @@ input, select, textarea {
 		footer a.mimuw {
 		display: block;
 		width: 60%;
-		text-align: right;
-		margin-right: 0;
+		margin-left: auto;
 		border-bottom: none;
 		}
 		
