@@ -4011,15 +4011,6 @@ input, select, textarea {
 
 
 
-
-.image_posts_single {
-	float: right;
-	margin-left: 1.5em;
-	margin-bottom: 0.5em;
-	max-width: 40%;
-	height: auto;
-}
-
 .pagination {
 	display: block;
     text-align: center;
