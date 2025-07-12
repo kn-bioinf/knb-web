@@ -64,7 +64,7 @@ w wydarzeniach naukowych takich jak DOKO i Biomeeting. A jeśli po prostu szukas
 								
 								<!-- Ograniczone do pięciu najnowszych - może paginacje? -->
 								
-								{{ range first 3 (sort (where .Site.RegularPages "Section" "aktualnosci") ".Date" "desc")}}
+								{{ range first 5 (sort (where .Site.RegularPages "Section" "aktualnosci") ".Date" "desc")}}
 								
       								<article>
             							<div class="article-content">
