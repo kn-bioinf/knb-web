@@ -3994,6 +3994,10 @@ input, select, textarea {
 	margin-bottom: 0.5em;
 }
 
+.image_posts_single img{
+  	width: 20em;
+}
+
 .pagination {
 	display: block;
     text-align: center;
