@@ -1,5 +1,5 @@
 +++
 name = 'Anastazja'
 surname = 'Tasinkiewicz'
-role = 'Wiceprezeska'
+role = 'Wiceprezes'
 +++
