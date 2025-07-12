@@ -182,6 +182,10 @@ input, select, textarea {
 			border-bottom-color: transparent;
 		}
 
+		a.mimuw {
+			text-decoration: none;
+		}
+
 	strong, b {
 		font-weight: 400;
 	}
