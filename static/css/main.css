@@ -182,6 +182,11 @@ input, select, textarea {
 
 	a.mimuw {
 		border-bottom: none;
+		display: inline-block;
+	}
+
+	a.mimuw img {
+		display: block;
 	}
 
 	strong, b {
