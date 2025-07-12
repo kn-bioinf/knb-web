@@ -3988,6 +3988,30 @@ input, select, textarea {
 
 }
 
+.article_content_post_flex {
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	gap: 1.5em;
+	flex-wrap: wrap; /* pozwala na lepsze zachowanie na małych ekranach */
+}
+
+/* Obrazek */
+.image_posts_single {
+	max-width: 40%;
+	height: auto;
+	object-fit: contain;
+}
+
+/* Tekst */
+.article_text {
+	flex: 1; /* zajmuje resztę szerokości */
+	min-width: 250px; /* żeby nie było zbyt wąsko przy zawijaniu */
+}
+
+
+
+
 .image_posts_single {
 	float: right;
 	margin-left: 1.5em;
