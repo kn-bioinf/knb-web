@@ -2673,13 +2673,12 @@ input, select, textarea {
   	}
 
   	.image_posts {
-	text-align: right; /* wyrównanie zawartości do prawej */
+		margin-left: auto;
 	}
 	
 	.image_posts img {
 		width: 20em;       /* lub inna szerokość */
-		display: inline-block; /* żeby poddał się text-align */
-		text-align: right;
+		display: block;
 	}
 
 
