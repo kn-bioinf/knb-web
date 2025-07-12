@@ -40,11 +40,13 @@
 										<img src="{{ .Params.image | absURL }}" alt="{{ .Title }}" class="image_posts_single"/>
 									{{ end }}
 							
-									<p>
-										{{ .Content }}
-									</p>
-									<p>{{ .Params.Date.Format "2.01.2006" }}</p>
+									
 								</div>
+
+								<p>
+									{{ .Content }}
+								</p>
+								<p>{{ .Params.Date.Format "2.01.2006" }}</p>
 							</section>
 
 					</div>
