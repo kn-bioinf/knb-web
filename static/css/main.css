@@ -3845,12 +3845,17 @@ input, select, textarea {
 		}
 		
 		footer a.mimuw {
-		display: block;
-		width: 60%;
-		margin-left: auto;
-		border-bottom: none;
+			display: block;
+			width: 60%;
+			margin-left: auto;
+			border-bottom: none;
+			transition: background-color 0.3s ease;
 		}
-		
+
+		footer a.mimuw:hover {
+			background-color: rgba(255, 255, 255, 0.2); /* mgliste białe tło */
+		}
+
 		footer a.mimuw img {
 			width: 100%;
 			height: auto;
