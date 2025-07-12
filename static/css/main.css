@@ -2679,6 +2679,7 @@ input, select, textarea {
 	.image_posts img {
 		width: 20em;       /* lub inna szerokość */
 		display: inline-block; /* żeby poddał się text-align */
+		text-align: right;
 	}
 
 
