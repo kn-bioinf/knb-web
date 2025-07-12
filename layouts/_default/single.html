@@ -35,18 +35,15 @@
 
 						<!-- Content -->
 							<section id="content" class="main">
-
-								<!-- Wstawienie obrazka, jeśli istnieje, w treści -->
-
 								<div class='article_content_post'>
-								{{ if .Params.image }}
-								        <span class="image_posts_single">
-								        <img src="{{ .Params.image | absURL }}" alt="{{ .Title}}"/>
-									</span>
-								{{ end }}
-
-								<p>{{ .Content}}</p>
-								<p>{{ .Params.Date.Format "2.01.2006" }}</p>
+									{{ if .Params.image }}
+										<img src="{{ .Params.image | absURL }}" alt="{{ .Title }}" class="image_posts_single"/>
+									{{ end }}
+							
+									<p>
+										{{ .Content }}
+									</p>
+									<p>{{ .Params.Date.Format "2.01.2006" }}</p>
 								</div>
 							</section>
 
