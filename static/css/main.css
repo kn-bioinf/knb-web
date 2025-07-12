@@ -183,6 +183,8 @@ input, select, textarea {
 	a.mimuw_logo {
 		border-bottom: none;
 		display: inline-block;
+		width: 60%;
+    		height: auto;
 	}
 
 
