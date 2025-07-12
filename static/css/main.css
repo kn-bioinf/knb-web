@@ -185,9 +185,6 @@ input, select, textarea {
 		display: inline-block;
 	}
 
-	a.mimuw img {
-		display: block;
-	}
 
 	strong, b {
 		font-weight: 400;
