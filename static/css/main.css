@@ -3989,7 +3989,8 @@ input, select, textarea {
 }
 
 .image_posts_single{
-	float: left;
+	display: flex;
+	
 	margin-right: 1.5em;
 	margin-bottom: 0.5em;
 }
