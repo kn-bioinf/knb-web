@@ -33,7 +33,7 @@
 
 								<!-- Ograniczone do pięciu najnowszych - może paginacje? -->
 								
-									{{ $paginator := .Paginate (where .Site.RegularPages "Section" "aktualnosci") 3 }}
+									{{ $paginator := .Paginate (where .Site.RegularPages "Section" "aktualnosci") 5 }}
 
 									{{ range $paginator.Pages }}
 									    <article>
