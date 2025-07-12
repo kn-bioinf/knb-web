@@ -36,14 +36,15 @@
 						<!-- Content -->
 							<section id="content" class="main">
 								<div class="article_content_post_flex">
-									{{ if .Params.image }}
-										<img src="{{ .Params.image | absURL }}" alt="{{ .Title }}" class="image_posts_single"/>
-									{{ end }}
-								
 									<div class="article_text">
 										{{ .Content }}
 										<p>{{ .Params.Date.Format "2.01.2006" }}</p>
 									</div>
+									
+									{{ if .Params.image }}
+										<img src="{{ .Params.image | absURL }}" alt="{{ .Title }}" class="image_posts_single"/>
+									{{ end }}
+		
 								</div>
 							</section>
 
