@@ -3988,10 +3988,33 @@ input, select, textarea {
 
 }
 
-.image_posts_single{
+/*.image_posts_single{
 	float: left;
 	margin-right: 1.5em;
 	margin-bottom: 0.5em;
+}*/
+
+.article_content_post {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+}
+
+.image_posts_single {
+  max-width: 300px;
+  height: auto;
+  margin-left: auto;
+  flex-shrink: 0;
+}
+
+@media (max-width: 768px) {
+  .article_content_post {
+    flex-direction: column;
+  }
+
+  .image_posts_single {
+    margin: 0 auto;
+  }
 }
 
 
