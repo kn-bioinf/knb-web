@@ -181,7 +181,8 @@ input, select, textarea {
 		}
 
 	a.mimuw {
-			border-bottom: none;
+		border-bottom: none;
+		display: inline-block;
 	}
 
 	strong, b {
