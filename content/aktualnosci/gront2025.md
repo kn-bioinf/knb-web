@@ -1,5 +1,5 @@
 +++
-title = 'Spotkanie z doktorem habilitowanym Dominikiem Grontem'
+title = 'Spotkanie z dr. hab. Dominikiem Grontem'
 date = '2025-03-19'
 draft = 'false'
 tags = ['nauka', 'zabawa']
