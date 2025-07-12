@@ -1,5 +1,5 @@
 +++
-title = 'Spotkanie z doktorem Krzysztofem Gogolewskim'
+title = 'Spotkanie z dr. Krzysztofem Gogolewskim'
 date = '2025-05-12'
 draft = 'false'
 tags = ['nauka', 'zabawa']
