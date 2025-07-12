@@ -182,7 +182,6 @@ input, select, textarea {
 
 	a.mimuw {
 		border-bottom: none;
-		display: inline-block;
 	}
 
 	strong, b {
@@ -3849,7 +3848,7 @@ input, select, textarea {
 		}
 		
 		footer .mimuw {
-    			display: block;
+    			display: inline-block;
     			text-align: right;
     			margin-right: 0;
 			}
