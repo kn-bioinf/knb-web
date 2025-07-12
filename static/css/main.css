@@ -3988,11 +3988,17 @@ input, select, textarea {
 
 }
 
-.image_posts_single{
-	display: flex;
-	
-	margin-right: 1.5em;
-	margin-bottom: 0.5em;
+.image_posts_single img {
+    max-width: 300px; /* lub inna maksymalna szerokość */
+    height: auto;
+    display: block;
+}
+
+.image_posts_single {
+    float: left;
+    margin-right: 1.5em;
+    margin-bottom: 0.5em;
+    max-width: 300px; /* dopasuj do img */
 }
 
 .pagination {
