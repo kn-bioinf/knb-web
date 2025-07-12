@@ -3848,7 +3848,6 @@ input, select, textarea {
     			display: inline-block;
     			text-align: right;
     			margin-right: 0;
-			width: auto !important;
 			border-bottom: none;
 			}
 
