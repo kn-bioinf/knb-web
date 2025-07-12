@@ -1,10 +1,10 @@
 +++
-title = 'Spotkanie z doktorem habilitowanym Dominikiem Grontem
+title = 'Spotkanie z doktorem habilitowanym Dominikiem Grontem'
 date = '2025-03-19'
 draft = 'false'
 tags = ['nauka', 'zabawa']
 summary = "27 marca odwiedzi nas dr hab. Dominik Gront z Zakładu Chemii Teoretycznej i Strukturalnej Wydziału Chemii."
-image = 'images/gront2025.jpg'
+image = 'images/gront.jpg'
 +++
 
 <!-- Tutaj START - cała treść posta -->
