@@ -22,9 +22,9 @@
 					<header id="header" class="alt">
 
 						<a href="https://mimuw.edu.pl/~bioinformatyka/">
-							<div class="logo">
+							<span class="logo">
 								<img src="{{ "images/logo_kola.jpg" | absURL }}" alt="Logo" />
-							</div>
+							</span>
 						</a>
 
 						<h1>Aktualności</h1>
@@ -53,9 +53,9 @@
 									        </div>
 
 									        {{ if .Params.image }}
-									            <span class="image_posts">
+									            <div class="image_posts">
 									                <img src="{{ .Params.image | absURL }}" alt="{{ .Title }}">
-									            </span>
+									            </div>
 									        {{ end }}
 									    </article>
 									{{ end }}
