@@ -12,8 +12,6 @@
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 
-
-AAAAAAAAAAAAAAAAAAA TEST AAAAAAAAAAAAAAAAAAAAAAAAA
 */
 
 html, body, div, span, applet, object,
@@ -182,9 +180,9 @@ input, select, textarea {
 			border-bottom-color: transparent;
 		}
 
-		a.mimuw {
-			text-decoration: none;
-		}
+	a.mimuw {
+			border-bottom: none;
+	}
 
 	strong, b {
 		font-weight: 400;
@@ -4000,27 +3998,25 @@ input, select, textarea {
 	margin-bottom: 0.5em;
 }*/
 
-.article_content_post {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1em;
+.article_content_post_flex {
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	gap: 1.5em;
+	flex-wrap: wrap; /* pozwala na lepsze zachowanie na małych ekranach */
 }
 
+/* Obrazek */
 .image_posts_single {
-  max-width: 300px;
-  height: auto;
-  margin-left: auto;
-  flex-shrink: 0;
+	max-width: 40%;
+	height: auto;
+	object-fit: contain;
 }
 
-@media (max-width: 768px) {
-  .article_content_post {
-    flex-direction: column;
-  }
-
-  .image_posts_single {
-    margin: 0 auto;
-  }
+/* Tekst */
+.article_text {
+	flex: 1; /* zajmuje resztę szerokości */
+	min-width: 250px; /* żeby nie było zbyt wąsko przy zawijaniu */
 }
 
 
