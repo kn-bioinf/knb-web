@@ -2653,10 +2653,17 @@ input, select, textarea {
   		gap: 2em;
   		align-items: center;
   		padding-bottom: 1em;
+		flex-wrap: wrap;
   	}
+
+	.article-content {
+		order: 2;
+		flex: 1;
+	}
 
   	.image_posts {
 		margin-left: auto;
+		order: 1;
 	}
 	
 	.image_posts img {
@@ -2674,6 +2681,14 @@ input, select, textarea {
 		article span{
 			display: block;
 		}
+
+		.article-content {
+		   	order: 1;
+		  }
+		
+		.image_posts {
+		    	order: 2;
+		}
 	}
 
 	@media screen and (max-width: 736px) {
@@ -2685,6 +2700,14 @@ input, select, textarea {
 		article span{
 			display: block;
 		}
+
+		.article-content {
+		   	order: 1;
+		  }
+		
+		.image_posts {
+		    	order: 2;
+		}
 	}
 
 	@media screen and (max-width: 480px) {
@@ -2695,6 +2718,14 @@ input, select, textarea {
 
 		article span{
 			display: block;
+		}
+
+		.article-content {
+		   	order: 2;
+		  }
+		
+		.image_posts {
+		    	order: 1;
 		}
 	}
 
