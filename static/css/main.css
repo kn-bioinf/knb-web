@@ -2811,9 +2811,11 @@ input, select, textarea {
 	}
 
 	@media screen and (max-width: 736px) {
-		max-width: 100%;
-		height: auto;
-		object-fit: contain;
+		.image_posts_single {
+			max-width: 100%;
+			height: auto;
+			object-fit: contain;
+		}
 	}
 	
 	/* Tekst */
