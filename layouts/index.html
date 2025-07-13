@@ -100,34 +100,45 @@ w wydarzeniach naukowych takich jak DOKO i Biomeeting. A jeśli po prostu szukas
 									<h2 class='header22'>Zarząd</h2>
 								</header>
 
-								<div class='people_container'>
-									{{ range where .Site.RegularPages "Section" "prezes"}}
-									<div class='person_block'>
-										<h4>{{ .Params.Name}} {{ .Params.Surname}}</h4>
-										<p><strong>{{ .Params.Role}}</strong></p>
-									</div>
-									{{end}}
+								<div class="people_container">
 
-									{{ range where .Site.RegularPages "Section" "wiceprezes"}}
-									<div class='person_block'>
-										<h4>{{ .Params.Name}} {{ .Params.Surname}}</h4>
-										<p><strong>{{ .Params.Role}}</strong></p>
-									</div>
-									{{end}}
-
-									{{ range where .Site.RegularPages "Section" "zarzad"}}
-									<div class='person_block'>
-										<h4>{{ .Params.Name}} {{ .Params.Surname}}</h4>
-										<p><strong>{{ .Params.Role}}</strong></p>
-									</div>
-									{{end}}
-
-									{{range where .Site.RegularPages "Section" "czlonkowie"}}
-									<div class='person_block'>
-										<h4>{{ .Params.Name}} {{ .Params.Surname}}</h4>
-										<p>Zainteresowania: {{ .Params.Interests}}</p>
-									</div>
-									{{end}}
+								    <!-- Rząd 1: Prezes + Wiceprezes w jednej linii -->
+								    <div class="top_row">
+								        {{ range where .Site.RegularPages "Section" "prezes" }}
+								        <div class="person_block">
+								            <h4>{{ .Params.Name }} {{ .Params.Surname }}</h4>
+								            <p><strong>{{ .Params.Role }}</strong></p>
+								        </div>
+								        {{ end }}
+								
+								        {{ range where .Site.RegularPages "Section" "wiceprezes" }}
+								        <div class="person_block">
+								            <h4>{{ .Params.Name }} {{ .Params.Surname }}</h4>
+								            <p><strong>{{ .Params.Role }}</strong></p>
+								        </div>
+								        {{ end }}
+								    </div>
+								
+								    <!-- Rząd 2: Zarząd -->
+								    <div class="zarzad_row">
+								        {{ range where .Site.RegularPages "Section" "zarzad" }}
+								        <div class="person_block">
+								            <h4>{{ .Params.Name }} {{ .Params.Surname }}</h4>
+								            <p><strong>{{ .Params.Role }}</strong></p>
+								        </div>
+								        {{ end }}
+								    </div>
+								
+								    <!-- Rząd 3: Członkowie -->
+								    <div class="czlonkowie_row">
+								        {{ range where .Site.RegularPages "Section" "czlonkowie" }}
+								        <div class="person_block">
+								            <h4>{{ .Params.Name }} {{ .Params.Surname }}</h4>
+								            <p>Zainteresowania: {{ .Params.Interests }}</p>
+								        </div>
+								        {{ end }}
+								    </div>
+								
 								</div>
 							</section>
 
