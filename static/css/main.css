@@ -3442,11 +3442,16 @@ input, select, textarea {
 		z-index: 10001;
 		background: none;
 		border: none;
-		font-size: 2em;
-		color: #1eba7a;
+		box-shadow: none;
+		outline: none;
 		cursor: pointer;
 		padding: 0;
 		line-height: 1;
+	}
+	
+	#nav-toggle i {
+		color: #1eba7a; /* zielony kolor ikonki */
+		font-size: 2em;
 	}
 
 
@@ -3454,16 +3459,15 @@ input, select, textarea {
 	@media screen and (max-width: 768px) {
 		#nav-toggle {
 			display: block;
-			color: #1eba7a;
 		}
 		
 		#nav {
 			display: none;
 			position: fixed;
-			top: 2em;
+			top: 3em;
 			left: 1em;
 			width: 12em; /* <-- to sprawia, że jest kolumną */
-			background-color: transparent;
+			background-color: f7f7f7;
 			padding: 1em;
 			text-align: left;
 			flex-direction: column;
