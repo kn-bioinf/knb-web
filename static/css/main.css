@@ -3552,15 +3552,17 @@ input, select, textarea {
 	
 		#nav.alt ul li {
 			margin: 0 0;
+			padding: 0;
 		}
 	
 		#nav.alt ul li a {
 			font-size: 1em;
+			padding: 0;
 		}
 
 		#nav ul li a {
 			font-size: 1em;
-			padding: 1em;
+			padding: 0;
 		}
 		
 	
