@@ -3954,10 +3954,10 @@ input, select, textarea {
     display: flex;
     flex-direction: column;
     gap: 2em;
+    align-items: center;
 }
 
 .person_block {
-    border: 1px solid lightgray;
     padding: 1em;
     border-radius: 8px;
     min-width: 200px;
@@ -3976,6 +3976,7 @@ input, select, textarea {
     display: flex;
     flex-wrap: wrap;
     gap: 2em;
+    justify-content: center;
 }
 
 
