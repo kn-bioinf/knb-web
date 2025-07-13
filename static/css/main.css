@@ -3517,8 +3517,8 @@ input, select, textarea {
 			position: fixed;
 			top: 5em;
 			left: 2em;
-			width: 100px; /* <-- to sprawia, że jest kolumną */
-			height: 200px;
+			width: 10em; /* <-- to sprawia, że jest kolumną */
+			height: 15em;
 			background-color: f7f7f7;
 			padding: 10px;
 			text-align: left;
@@ -3536,8 +3536,8 @@ input, select, textarea {
 			position: fixed;
 			top: 5em;
 			left: 2em;
-			width: 100px; /* <-- to sprawia, że jest kolumną */
-			height: 20px;
+			width: 10em; /* <-- to sprawia, że jest kolumną */
+			height: 15em;
 			background-color: f7f7f7;
 			padding: 10px; 
 			text-align: left;
