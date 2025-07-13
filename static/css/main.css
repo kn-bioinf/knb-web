@@ -3520,7 +3520,7 @@ input, select, textarea {
 			width: 10em; /* <-- to sprawia, że jest kolumną */
 			height: 15em;
 			background-color: f7f7f7;
-			padding: 1em 1em; 
+			padding: 5px 5px;
 			text-align: left;
 			flex-direction: column;
 			border-radius: 0.5em;
@@ -3538,7 +3538,7 @@ input, select, textarea {
 			width: 10em; /* <-- to sprawia, że jest kolumną */
 			height: 15em;
 			background-color: f7f7f7;
-			padding: 1em 1em; 
+			padding: 5px 5px; 
 			text-align: left;
 			flex-direction: column;
 			border-radius: 0.5em;
@@ -3552,23 +3552,23 @@ input, select, textarea {
 	
 		#nav.alt ul li {
 			margin: 0 0;
-			padding: 0px 0px;
-			text-align: left;
+			padding: 5px 5px;
 		}
 	
 		#nav.alt ul li a {
 			font-size: 1.2em;
 			padding: 5px 5px;
-			text-align: left;
 		}
 
 		#nav ul li a {
 			font-size: 1.2em;
 			padding: 5px 5px;
-			text-align: left;
+		}
+
+		#nav.alt {
+			padding: 5px 5px;
 		}
 		
-	
 		#nav.open {
 			display: flex;
 		}
