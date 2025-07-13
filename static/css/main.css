@@ -3469,7 +3469,7 @@ input, select, textarea {
 		#nav {
 			display: none;
 			position: fixed;
-			top: 3em;
+			top: 4em;
 			left: 1em;
 			width: 12em; /* <-- to sprawia, że jest kolumną */
 			background-color: f7f7f7;
