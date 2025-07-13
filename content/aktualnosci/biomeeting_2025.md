@@ -9,6 +9,8 @@ image = 'images/biomeeting.jpg'
 
 <!-- Tutaj START - cała treść posta -->
 
+#BioMeeting 2025#
+
 W dniach 23-25 maja uczestniczyliśmy w konferencji studenckich kół naukowych. W trakcie wyjazdu odbywały się wykłady, sesje posterowe (na których mieliśmy okazję zaprezentować swoje badania i działalność naszego Koła), integracyjne ogniska i wycieczki.
 
 W wydarzeniu towarzyszyli nam dr Aleksander Jankowski oraz dr Damian Wójtowicz. Dziękujemy za dzielenie się swoją wiedzą!
