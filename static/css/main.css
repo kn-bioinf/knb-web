@@ -3414,17 +3414,23 @@ input, select, textarea {
 
 	#nav-toggle {
 		display: none;
-		position: absolute;
-		top: 1.2em;
-		right: 2em;
+		position: fixed;
+		top: 1em;
+		left: 1em;
 		z-index: 10001;
 		background: none;
 		border: none;
-		font-size: 1.8em;
+		box-shadow: none;
+		outline: none;
+		font-size: 2em;
 		color: #fff;
 		cursor: pointer;
 		padding: 0;
 		line-height: 1;
+	}
+
+	#nav-toggle:focus {
+		outline: none;
 	}
 
 
@@ -3435,7 +3441,7 @@ input, select, textarea {
 			left: 0;
 			width: 100%;
 			padding: 1em;
-			border-radius: 0;
+			border: none;
 			background-color: #f7f7f7;
 			text-align: left;
 			display: none;
