@@ -111,6 +111,14 @@
 		<script src="{{ "js/breakpoints.min.js" | absURL }}"></script>
 		<script src="{{ "js/util.js" | absURL }}"></script>
 		<script src="{{ "js/main.js" | absURL }}"></script>
+		<script>
+			document.addEventListener("DOMContentLoaded", function () {
+				document.getElementById("nav-toggle").addEventListener("click", function () {
+					const nav = document.getElementById("nav");
+					nav.classList.toggle("open");
+				});
+			});
+		</script>
 
 	</body>
 </html>
