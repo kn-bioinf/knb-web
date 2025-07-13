@@ -2815,7 +2815,7 @@ input, select, textarea {
 			max-width: 100%;
 			height: auto;
 			object-fit: contain;
-			margin-bottom: 1em;
+			margin-bottom: 2em;
 		}
 	}
 	
@@ -3472,7 +3472,7 @@ input, select, textarea {
 			position: fixed;
 			top: 5em;
 			left: 2em;
-			width: 1em; /* <-- to sprawia, że jest kolumną */
+			width: 10em; /* <-- to sprawia, że jest kolumną */
 			background-color: f7f7f7;
 			padding: 1em;
 			text-align: left;
