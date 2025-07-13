@@ -3487,7 +3487,7 @@ input, select, textarea {
 			left: 2em;
 			width: 10em; /* <-- to sprawia, że jest kolumną */
 			background-color: f7f7f7;
-			padding: 1em 1em;
+			padding: 1em; 
 			text-align: left;
 			flex-direction: column;
 			border-radius: 0.5em;
@@ -3505,7 +3505,7 @@ input, select, textarea {
 			left: 2em;
 			width: 10em; /* <-- to sprawia, że jest kolumną */
 			background-color: f7f7f7;
-			padding: 1em 1em;
+			padding: 1em !important;
 			text-align: left;
 			flex-direction: column;
 			border-radius: 0.5em;
