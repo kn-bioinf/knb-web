@@ -3528,6 +3528,10 @@ input, select, textarea {
 			font-size: 1em;
 			margin: 0;
 		}
+
+		#nav.alt {
+			background-color: rgba(247, 247, 247, 0.9);
+		}
 	
 		#nav.open, #nav.alt.open {
 			display: flex;
@@ -3547,6 +3551,8 @@ input, select, textarea {
 
 		#nav ul li a, #nav.alt ul li a {
 			font-size: 1.2em;
+			text-align: center;
+			vertical-align: middle;
 		}
 	}
 			
