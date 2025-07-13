@@ -3556,11 +3556,11 @@ input, select, textarea {
 			margin: 0 0;
 			padding: 2px 8px;
 			text-align: left;
-			font-size: 1.2em;
+			font-size: 2px;
 		}
 	
 		#nav.alt ul li a {
-			font-size: 1.2em;
+			font-size: 2px;
 			padding: 2px 8px;
 			text-align: left;
 			margin: 0 0;
@@ -3570,11 +3570,11 @@ input, select, textarea {
 			padding: 2px 8px;
 			text-align: left;
 			margin: 0 0;
-			font-size: 1.2em;
+			font-size: 2px;
 		}
 
 		#nav ul li a {
-			font-size: 1.2em;
+			font-size: 2px;
 			padding: 2px 8px;
 			text-align: left;
 			margin: 0 0;
@@ -3584,14 +3584,14 @@ input, select, textarea {
 			padding: 2px 8px;
 			text-align: left;
 			margin: 0 0;
-			font-size: 1.2em;
+			font-size: 2px;
 		}
 
 		#nav ul li {
 			padding: 2px 8px;
 			text-align: left;
 			margin: 0 0;
-			font-size: 1.2em;
+			font-size: 2px;
 		}
 		
 		
