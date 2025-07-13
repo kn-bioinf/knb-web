@@ -3529,6 +3529,7 @@ input, select, textarea {
 			font-size: 1em;
 			background-color: rgba(247, 247, 247, 1);
 			margin: 0 0;
+			vertical-align: middle;
 		}
 
 		#nav.alt {
@@ -3549,14 +3550,16 @@ input, select, textarea {
 			font-size: 1em;
 			background-color: rgba(247, 247, 247, 0.95);
 			margin: 0 0;
+			vertical-align: middle;
 		}
 
 	
 		#nav.alt ul li {
-
+			font-size: 1.2em;
 			margin: 0 0;
 			padding: 2px 8px;
 			text-align: left;
+			vertical-align: middle;
 		}
 
 
@@ -3566,12 +3569,15 @@ input, select, textarea {
 			padding: 2px 8px;
 			text-align: left;
 			margin: 0 0;
+			vertical-align: middle;
 		}
 
 		#nav.alt {
 			padding: 2px 8px;
 			text-align: left;
 			margin: 0 0;
+			vertical-align: middle;
+			font-size: 1.2em;
 		}
 
 
@@ -3580,18 +3586,23 @@ input, select, textarea {
 			padding: 2px 8px;
 			text-align: left;
 			margin: 0 0;
+			vertical-align: middle;
 		}
 
 		#nav ul {
 			padding: 2px 8px;
 			text-align: left;
 			margin: 0 0;
+			vertical-align: middle;
+			font-size: 1.2em;
 		}
 
 		#nav ul li {
 			padding: 2px 8px;
 			text-align: left;
 			margin: 0 0;
+			vertical-align: middle;
+			font-size: 1.2em;
 		}
 		
 		
