@@ -3443,7 +3443,7 @@ input, select, textarea {
 	#nav-toggle {
 		display: none;
 		position: fixed;
-		top: 1em;
+		top: 0.5em;
 		left: 1em;
 		z-index: 10001;
 		background: none;
@@ -3476,6 +3476,7 @@ input, select, textarea {
 			border-radius: 0.5em;
 			box-shadow: 0 0 1em rgba(0, 0, 0, 0.15);
 			z-index: 1000;
+			color: #fff;
 		}
 	
 		#nav.open {
