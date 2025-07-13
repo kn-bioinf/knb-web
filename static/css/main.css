@@ -3507,6 +3507,10 @@ input, select, textarea {
 		#nav.alt ul li a {
 			font-size: 1em;
 		}
+
+		#nav.alt ul li {
+			margin: 0 0;
+		}
 	
 		#nav.open {
 			display: flex;
