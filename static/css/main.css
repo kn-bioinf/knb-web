@@ -3456,24 +3456,47 @@ input, select, textarea {
 
 
 	@media screen and (max-width: 768px) {
-		#nav-toggle {
-			display: block;
-		}
-		
 		#nav {
 			display: none;
 			position: fixed;
-			top: 0;
-			left: 0;
-			width: 100%;
-			flex-direction: column;
+			top: 1em;
+			left: 1em;
+			width: 12em; /* <-- to sprawia, że jest kolumną */
 			background-color: #f7f7f7;
 			padding: 1em;
 			text-align: left;
+			flex-direction: column;
+			border-radius: 0.5em;
+			box-shadow: 0 0 1em rgba(0, 0, 0, 0.15);
+			z-index: 1000;
 		}
 	
 		#nav.open {
 			display: flex;
+		}
+	
+		#nav ul {
+			flex-direction: column;
+			align-items: stretch;
+			gap: 0.5em;
+		}
+	
+		#nav ul li {
+			display: block;
+			margin: 0;
+		}
+	
+		#nav ul li a {
+			width: 100%;
+			font-size: 1em;
+			padding: 0.5em;
+			border-radius: 0.25em;
+			color: #1eba7a;
+			background-color: transparent;
+		}
+	
+		#nav ul li a:hover {
+			background-color: rgba(30, 186, 122, 0.1); /* delikatna zieleń */
 		}
 	}
 
