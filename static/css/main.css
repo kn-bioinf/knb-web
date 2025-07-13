@@ -3540,7 +3540,7 @@ input, select, textarea {
 	
 		#nav ul, #nav.alt ul {
 			padding: 2px 8px;
-			text-align: left;
+			text-align: centre;
 			margin: 0;
 			vertical-align: middle;
 		}
@@ -3550,12 +3550,14 @@ input, select, textarea {
 			text-align: left;
 			margin: 0;
 			vertical-align: middle;
+			text-align: centre;
 		}
 
 		#nav ul li a, #nav.alt ul li a {
 			font-size: 1.2em;
 			text-align: left;
 			vertical-align: middle;
+			text-align: centre;
 		}
 	}
 			
