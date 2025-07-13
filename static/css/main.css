@@ -2809,6 +2809,12 @@ input, select, textarea {
 		height: auto;
 		object-fit: contain;
 	}
+
+	@media screen and (max-width: 736px) {
+		max-width: 100%;
+		height: auto;
+		object-fit: contain;
+	}
 	
 	/* Tekst */
 	.article_text {
@@ -2816,7 +2822,7 @@ input, select, textarea {
 		min-width: 250px; /* żeby nie było zbyt wąsko przy zawijaniu */
 	}
 
-/* Table */
+	/* Table */
 
 	.table-wrapper {
 		-webkit-overflow-scrolling: touch;
