@@ -13,97 +13,98 @@
 		<noscript><link rel="stylesheet" href="{{ "css/noscript.css" | absURL }}" /></noscript>
 		<link rel="icon" href="{{ "favicon.ico" | absURL }}" type="image/x-icon">
 	</head>
+	
 	<body class="is-preload">
 
 		<!-- Wrapper -->
-			<div id="wrapper">
+		<div id="wrapper">
 
-				<!-- Header -->
-					<header id="header" class="alt">
+			<!-- Header -->
+			<header id="header" class="alt">
+				
+				<a href="https://mimuw.edu.pl/~bioinformatyka/">
+					<span class="logo">
+						<img src="{{ "images/logo_kola.jpg" | absURL }}" alt="Logo" />
+					</span>
+				</a>
+
+				<!-- <h1>{{ .Title}}</h1> -- jesli chcesz tytuł postaw nagłówku -->
+			</header>
+
+			<!-- pasek na górze -->
+			<nav id="nav">
+			    <ul>
+				<li><a href="https://mimuw.edu.pl/~bioinformatyka/#intro">O nas</a></li>
+				<li><a href="https://mimuw.edu.pl/~bioinformatyka/#aktualnosci">Aktualności</a></li>
+				<li><a href="https://mimuw.edu.pl/~bioinformatyka/#zarzad">Zarząd</a></li>
+				<li><a href="https://mimuw.edu.pl/~bioinformatyka/#dolacz">Dołącz</a></li>
+				<li><a href="https://mimuw.edu.pl/~bioinformatyka/#kontakt">Kontakt</a></li>
+			    </ul>
+			</nav>
+
+			<!-- Main -->
+			<div id="main">
+
+				<!-- Content -->
+				<section id="content" class="main">
+					<div class="article_content_post_flex">
+						<div class="article_text">
+							{{ .Content }}
+							<p>{{ .Params.Date.Format "2.01.2006" }}</p>
+						</div>
 						
-						<a href="https://mimuw.edu.pl/~bioinformatyka/">
-							<span class="logo">
-								<img src="{{ "images/logo_kola.jpg" | absURL }}" alt="Logo" />
-							</span>
-						</a>
-	
-						<!-- <h1>{{ .Title}}</h1> -->
-					</header>
-
-					<nav id="nav">
-					    <ul>
-					        <li><a href="https://mimuw.edu.pl/~bioinformatyka/#intro">O nas</a></li>
-					        <li><a href="https://mimuw.edu.pl/~bioinformatyka/#first">Aktualności</a></li>
-					        <li><a href="https://mimuw.edu.pl/~bioinformatyka/#second">Zarząd</a></li>
-					        <li><a href="https://mimuw.edu.pl/~bioinformatyka/#cta">Dołącz</a></li>
-					        <li><a href="https://mimuw.edu.pl/~bioinformatyka/#kontakt">Kontakt</a></li>
-					    </ul>
-					</nav>
-
-				<!-- Main -->
-					<div id="main">
-
-						<!-- Content -->
-							<section id="content" class="main">
-								<div class="article_content_post_flex">
-									<div class="article_text">
-										{{ .Content }}
-										<p>{{ .Params.Date.Format "2.01.2006" }}</p>
-									</div>
-									
-									{{ if .Params.image }}
-										<img src="{{ .Params.image | absURL }}" alt="{{ .Title }}" class="image_posts_single"/>
-									{{ end }}
-		
-								</div>
-
-								<div class="back_button_container">
-									<a href="https://mimuw.edu.pl/~bioinformatyka/aktualnosci" class="button primary">Powrót do listy aktualności</a>
-								</div>
-							</section>
+						{{ if .Params.image }}
+							<img src="{{ .Params.image | absURL }}" alt="{{ .Title }}" class="image_posts_single"/>
+						{{ end }}
 
 					</div>
 
-				<!-- Footer -->
-					<footer id="footer">
-						<section id="kontakt">
-							
-							<h2>Kontakt</h2>
-							<dl class="alt">
-								<dt>Adres</dt>
-								<dd>Stefana Banacha 2 &bull; Warszawa, 02-097</dd>
-								<dt>Email</dt>
-								<dd><a href="#">kn.bioinf@uw.edu.pl</a></dd>
-							</dl>
-							<ul class="icons">
-								
-								<li><a href="https://www.facebook.com/Bioinformatyka.UW/" target='_blank' class="icon brands fa-facebook-f alt"><span class="label">Facebook</span></a></li>
-								<li><a href="https://www.instagram.com/bioinformatyka_uw/" target='_blank' class="icon brands fa-instagram alt"><span class="label">Instagram</span></a></li>
-								
-							</ul>
-
-						</section>
-
-						<section>
-							<a href="https://mimuw.edu.pl" target="_blank" class="mimuw">
-
-							    <img src="{{ "images/logo_wydzialu2.png" | absURL }}" alt="Wydział MIMUW" />
-
-							</a>
-						</section>	
-						<p class="copyright">&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
-					</footer>
+					<div class="back_button_container">
+						<a href="https://mimuw.edu.pl/~bioinformatyka/aktualnosci" class="button primary">Powrót do listy aktualności</a>
+					</div>
+				</section>
 
 			</div>
 
+			<!-- Footer -->
+			<footer id="footer">
+				<section id="kontakt">
+					
+					<h2>Kontakt</h2>
+					<dl class="alt">
+						<dt>Adres</dt>
+						<dd>Stefana Banacha 2 &bull; Warszawa, 02-097</dd>
+						<dt>Email</dt>
+						<dd><a href="#">kn.bioinf@uw.edu.pl</a></dd>
+					</dl>
+					
+					<ul class="icons">
+						<li><a href="https://www.facebook.com/Bioinformatyka.UW/" target='_blank' class="icon brands fa-facebook-f alt"><span class="label">Facebook</span></a></li>
+						<li><a href="https://www.instagram.com/bioinformatyka_uw/" target='_blank' class="icon brands fa-instagram alt"><span class="label">Instagram</span></a></li>
+						<li><a href="https://github.com/kn-bibs" target="_blank" class="icon brands fa-github alt"><span class="label">GitHub</span></a></li>
+					</ul>
+
+				</section>
+
+				<section>
+					<a href="https://mimuw.edu.pl" target="_blank" class="mimuw">
+						<img src="{{ "images/logo_wydzialu2.png" | absURL }}" alt="Wydział MIMUW" />
+					</a>
+				</section>
+				
+				<p class="copyright">&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+			</footer>
+
+		</div>
+
 		<!-- Scripts -->
-			<script src="{{ "js/jquery.min.js" | absURL }}"></script>
-			<script src="{{ "js/jquery.scrollex.min.js" | absURL }}"></script>
-			<script src="{{ "js/jquery.scrolly.min.js" | absURL }}"></script>
-			<script src="{{ "js/browser.min.js" | absURL }}"></script>
-			<script src="{{ "js/breakpoints.min.js" | absURL }}"></script>
-			<script src="{{ "js/util.js" | absURL }}"></script>
-			<script src="{{ "js/main.js" | absURL }}"></script>
+		<script src="{{ "js/jquery.min.js" | absURL }}"></script>
+		<script src="{{ "js/jquery.scrollex.min.js" | absURL }}"></script>
+		<script src="{{ "js/jquery.scrolly.min.js" | absURL }}"></script>
+		<script src="{{ "js/browser.min.js" | absURL }}"></script>
+		<script src="{{ "js/breakpoints.min.js" | absURL }}"></script>
+		<script src="{{ "js/util.js" | absURL }}"></script>
+		<script src="{{ "js/main.js" | absURL }}"></script>
 
 	</body>
 </html>
