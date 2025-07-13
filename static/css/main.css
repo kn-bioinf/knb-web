@@ -3445,7 +3445,7 @@ input, select, textarea {
 		box-shadow: none;
 		outline: none;
 		font-size: 2em;
-		color: #333;
+		color: #1eba7a;
 		cursor: pointer;
 		padding: 0;
 		line-height: 1;
@@ -3454,29 +3454,8 @@ input, select, textarea {
 	#nav-toggle:focus {
 		outline: none;
 	}
-
-
+	
 	@media screen and (max-width: 736px) {
-		#nav {
-			display: none;
-			position: fixed;
-			top: 0;
-			left: 0;
-			width: 100%;
-			background-color: #f7f7f7;
-			padding: 1em;
-			text-align: left;
-			flex-direction: column;
-			z-index: 1000;
-		}
-	
-		#nav.open {
-			display: flex;
-		}
-	}
-
-	
-	@media screen and (max-width: 768px) {
 		#nav-toggle {
 			display: block;
 		}
