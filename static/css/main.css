@@ -3449,13 +3449,13 @@ input, select, textarea {
 		line-height: 1;
 	}
 
-	
-	#nav-toggle:focus {
-		outline: none;
-	}
 
 
 	@media screen and (max-width: 768px) {
+		#nav-toggle {
+			display: block;
+		}
+		
 		#nav {
 			display: none;
 			position: fixed;
@@ -3474,6 +3474,10 @@ input, select, textarea {
 		#nav.open {
 			display: flex;
 		}
+
+		#nav-toggle:focus {
+			outline: none;
+		}	
 	
 		#nav ul {
 			flex-direction: column;
