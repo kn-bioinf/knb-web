@@ -3963,9 +3963,6 @@ input, select, textarea {
     width: calc(33.333% - 2em);  /* 3 elementy w jednym wierszu */
     box-sizing: border-box;
     text-align: center;
-    
-
-   
 }
 
 
@@ -3975,8 +3972,16 @@ input, select, textarea {
     height: auto;
     border-radius: 50%;
     margin-bottom: 10px;
-
 }
+
+.top_row,
+.zarzad_row,
+.czlonkowie_row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+}
+
 
 @media (max-width: 768px) {
     .person-block {
