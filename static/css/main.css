@@ -3520,6 +3520,7 @@ input, select, textarea {
 			height: 15em;
 			background-color: rgba(247, 247, 247, 1);
 			padding: 0;
+			line-height: 15em;
 			text-align: center;
 			vertical-align: middle;
 			flex-direction: column;
