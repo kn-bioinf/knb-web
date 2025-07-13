@@ -3480,7 +3480,7 @@ input, select, textarea {
 			box-shadow: 0 0 1em rgba(0, 0, 0, 0.15);
 			z-index: 1000;
 			color: #636363;
-			font-size: 2em;
+			font-size: 1em;
 		}
 
 		#nav.alt {
@@ -3497,7 +3497,7 @@ input, select, textarea {
 			box-shadow: 0 0 1em rgba(0, 0, 0, 0.15);
 			z-index: 1000;
 			color: #636363;
-			font-size: 2em;
+			font-size: 1em;
 		}
 	
 		#nav.open {
