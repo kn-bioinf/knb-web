@@ -3959,7 +3959,7 @@ input, select, textarea {
 }
 
 .photo_row img {
-    width: 8em;
+    width: 15em;
     height: auto;
     object-fit: cover;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
