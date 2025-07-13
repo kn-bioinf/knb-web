@@ -3436,9 +3436,9 @@ input, select, textarea {
 
 	#nav-toggle {
 		display: none;
-		position: absolute;
-		top: 1.2em;
-		right: 2em;
+		position: fixed;
+		top: 0;
+		left: 0;
 		z-index: 10001;
 		background: none;
 		border: none;
