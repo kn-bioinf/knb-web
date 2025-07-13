@@ -3552,29 +3552,40 @@ input, select, textarea {
 	
 		#nav.alt ul li {
 			margin: 0 0;
-			padding: 10px;
+			padding: 8px;
+			text-align: left;
 		}
 	
 		#nav.alt ul li a {
 			font-size: 1.2em;
-			padding: 10px;
+			padding: 8px;
+			text-align: left;
+			margin: 0 0;
 		}
 
 		#nav.alt {
-			padding: 10px;
+			padding: 8px;
+			text-align: left;
+			margin: 0 0;
 		}
 
 		#nav ul li a {
 			font-size: 1.2em;
-			padding: 10px;
+			padding: 8px;
+			text-align: left;
+			margin: 0 0;
 		}
 
 		#nav ul {
-			padding: 10px;
+			padding: 8px;
+			text-align: left;
+			margin: 0 0;
 		}
 
 		#nav ul li {
-			padding: 10px;
+			padding: 8px;
+			text-align: left;
+			margin: 0 0;
 		}
 		
 		
