@@ -2794,6 +2794,28 @@ input, select, textarea {
 		background-color: rgba(255, 255, 255, 0.35);
 	}
 
+
+	.article_content_post_flex {
+		display: flex;
+		flex-direction: row;
+		align-items: flex-start;
+		gap: 1.5em;
+		flex-wrap: wrap; /* pozwala na lepsze zachowanie na małych ekranach */
+	}
+	
+	/* Obrazek */
+	.image_posts_single {
+		max-width: 40%;
+		height: auto;
+		object-fit: contain;
+	}
+	
+	/* Tekst */
+	.article_text {
+		flex: 1; /* zajmuje resztę szerokości */
+		min-width: 250px; /* żeby nie było zbyt wąsko przy zawijaniu */
+	}
+
 /* Table */
 
 	.table-wrapper {
@@ -3436,39 +3458,20 @@ input, select, textarea {
 
 	@media screen and (max-width: 736px) {
 		#nav {
+			display: none;
 			position: fixed;
 			top: 0;
 			left: 0;
 			width: 100%;
-			padding: 1em;
-			border: none;
 			background-color: #f7f7f7;
+			padding: 1em;
 			text-align: left;
-			display: none;
 			flex-direction: column;
+			z-index: 1000;
 		}
-		
+	
 		#nav.open {
 			display: flex;
-		}
-		
-		#nav ul {
-			flex-direction: column;
-			align-items: stretch;
-		}
-		
-		#nav ul li {
-			display: block;
-			margin: 0.5em 0;
-		}
-		
-		#nav ul li a {
-			width: 100%;
-			font-size: 1em;
-		}
-		
-		#nav-toggle {
-			display: block;
 		}
 	}
 
@@ -3958,139 +3961,120 @@ input, select, textarea {
 
 	}
 
+/* rząd obrazków do intro */
 
-.photo_row {
-display: flex;
-justify-content: center;
-gap: 1em;
-margin-bottom: 1.5em;
-flex-wrap: wrap; /* żeby na małych ekranach schodziły pod spód */
-}
-
-.photo_row img {
-    width: 18em;
-    height: 12em; /* Ustalony rozmiar wyświetlania */
-    object-fit: cover; /* Przycinanie do rozmiaru */
-    object-position: center; /* Wyśrodkowanie obrazu w ramce */
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
-}
-
-
-
-.people_container {
-    display: flex;
-    flex-direction: column;
-    gap: 2em;
-    align-items: center;
-}
-
-.person_block {
-    padding: 1em;
-    border-radius: 8px;
-    min-width: 200px;
-    text-align: center;
-}
-
-.person-block img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 50%;
-    margin-bottom: 10px;
-}
-
-.top_row,
-.zarzad_row,
-.czlonkowie_row {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2em;
-    justify-content: center;
-}
-
-
-@media (max-width: 768px) {
-    .person-block {
-        width: calc(50% - 20px);  /* Na mniejszych ekranach 2 bloki w wierszu */
-    }
-}
-
-@media (max-width: 480px) {
-    .person-block {
-        width: 100%;  /* Na bardzo małych ekranach 1 blok na całą szerokość */
-    }
-}
-
-
-
-.people_container .person_block .icon {
-    font-size: 0.7em;  /* Przykład: zmienia rozmiar ikony */
-    transform: translateY(-5px);
-
-}
-
-
-.article_content_post_flex {
+	.photo_row {
 	display: flex;
-	flex-direction: row;
-	align-items: flex-start;
-	gap: 1.5em;
-	flex-wrap: wrap; /* pozwala na lepsze zachowanie na małych ekranach */
-}
-
-/* Obrazek */
-.image_posts_single {
-	max-width: 40%;
-	height: auto;
-	object-fit: contain;
-}
-
-/* Tekst */
-.article_text {
-	flex: 1; /* zajmuje resztę szerokości */
-	min-width: 250px; /* żeby nie było zbyt wąsko przy zawijaniu */
-}
+	justify-content: center;
+	gap: 1em;
+	margin-bottom: 1.5em;
+	flex-wrap: wrap; /* żeby na małych ekranach schodziły pod spód */
+	}
+	
+	.photo_row img {
+	    width: 18em;
+	    height: 12em; /* Ustalony rozmiar wyświetlania */
+	    object-fit: cover; /* Przycinanie do rozmiaru */
+	    object-position: center; /* Wyśrodkowanie obrazu w ramce */
+	    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+	}
 
 
+/* osoby zarządu */
 
-.pagination {
-	display: block;
-    text-align: center;
-    margin-top: 3em;
-}
+	.people_container {
+	    display: flex;
+	    flex-direction: column;
+	    gap: 2em;
+	    align-items: center;
+	}
+	
+	.person_block {
+	    padding: 1em;
+	    border-radius: 8px;
+	    min-width: 200px;
+	    text-align: center;
+	}
+	
+	.person-block img {
+	    max-width: 100%;
+	    height: auto;
+	    border-radius: 50%;
+	    margin-bottom: 10px;
+	}
+	
+	.top_row,
+	.zarzad_row,
+	.czlonkowie_row {
+	    display: flex;
+	    flex-wrap: wrap;
+	    gap: 2em;
+	    justify-content: center;
+	}
+	
+	
+	@media (max-width: 768px) {
+	    .person-block {
+	        width: calc(50% - 20px);  /* Na mniejszych ekranach 2 bloki w wierszu */
+	    }
+	}
+	
+	@media (max-width: 480px) {
+	    .person-block {
+	        width: 100%;  /* Na bardzo małych ekranach 1 blok na całą szerokość */
+	    }
+	}
+	
+	
+	
+	.people_container .person_block .icon {
+	    font-size: 0.7em;  /* Przykład: zmienia rozmiar ikony */
+	    transform: translateY(-5px);
+	
+	}
 
 
-.pagination a{
-	border-bottom: none !important;
-	margin: 0.2em;
-	width: 2em;
-	padding-left: 0.3em;
-	padding-right: 0.3em;
+/* paginacja */
 
-
-}
-
-.pagination a:link{
-	border-bottom: none !important;
-}
-.pagination a:active{
-	border-bottom: none !important;
-    margin: 5px;
-    transition: background 0.3s;
-}
-
-.pagination a:hover {
-	border-bottom: none !important;
-    color: #c7c7c7 !important;
-    border-radius: 20%;
-}
-
-.pagination .current-page {
-    font-size: 18px;
-    margin: 0 10px;
-}
-
-
-#cta div{
-	font-size: 1.4em;
-}
+	.pagination {
+		display: block;
+	    text-align: center;
+	    margin-top: 3em;
+	}
+	
+	
+	.pagination a{
+		border-bottom: none !important;
+		margin: 0.2em;
+		width: 2em;
+		padding-left: 0.3em;
+		padding-right: 0.3em;
+	
+	
+	}
+	
+	.pagination a:link{
+		border-bottom: none !important;
+	}
+	.pagination a:active{
+		border-bottom: none !important;
+	    margin: 5px;
+	    transition: background 0.3s;
+	}
+	
+	.pagination a:hover {
+		border-bottom: none !important;
+	    color: #c7c7c7 !important;
+	    border-radius: 20%;
+	}
+	
+	.pagination .current-page {
+	    font-size: 18px;
+	    margin: 0 10px;
+	}
+	
+	
+	#cta div{
+		font-size: 1.4em;
+	}
 
