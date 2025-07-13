@@ -29,7 +29,7 @@
 
 
 			<!-- Hamburger toggle button for mobile -->
-			<button id="nav-toggle">☰ Menu</button>	
+			<button id="nav-toggle">☰</button>	
 			
 			<!-- Nav - pasek na górze -->
 			<nav id="nav">
@@ -221,11 +221,9 @@
 		<script src="{{ "js/util.js" | absURL }}"></script>
 		<script src="{{ "js/main.js" | absURL }}"></script>
 		<script>
-			document.addEventListener("DOMContentLoaded", function () {
-				document.getElementById("nav-toggle").addEventListener("click", function () {
-					const nav = document.getElementById("nav");
-					nav.classList.toggle("open");
-				});
+			document.getElementById("nav-toggle").addEventListener("click", function () {
+				const nav = document.getElementById("nav");
+				nav.classList.toggle("open");
 			});
 		</script>
 
