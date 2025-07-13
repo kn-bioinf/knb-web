@@ -3520,7 +3520,8 @@ input, select, textarea {
 			height: 15em;
 			background-color: rgba(247, 247, 247, 1);
 			padding: 10px;
-			text-align: left;
+			text-align: center;
+			vertical-align: middle;
 			flex-direction: column;
 			border-radius: 0.5em;
 			box-shadow: 0 0 1em rgba(0, 0, 0, 0.15);
@@ -3541,12 +3542,16 @@ input, select, textarea {
 			padding: 2px 8px;
 			text-align: left;
 			margin: 0;
+			text-align: center;
+			vertical-align: middle;
 		}
 	
 		#nav ul li, #nav.alt ul li {
 			padding: 2px 8px;
 			text-align: left;
 			margin: 0;
+			text-align: center;
+			vertical-align: middle;
 		}
 
 		#nav ul li a, #nav.alt ul li a {
