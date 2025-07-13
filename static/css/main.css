@@ -3481,6 +3481,10 @@ input, select, textarea {
 			z-index: 1000;
 			color: #636363;
 		}
+
+		#nav.alt {
+			all: unset;
+		}
 	
 		#nav.open {
 			display: flex;
