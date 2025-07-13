@@ -3447,13 +3447,8 @@ input, select, textarea {
 		cursor: pointer;
 		padding: 0;
 		line-height: 1;
+		font-size: 5em;
 	}
-	
-	#nav-toggle i {
-		color: #1eba7a; /* zielony kolor ikonki */
-		font-size: 2em;
-	}
-
 
 
 	@media screen and (max-width: 768px) {
@@ -3479,10 +3474,6 @@ input, select, textarea {
 		#nav.open {
 			display: flex;
 		}
-
-		#nav-toggle:focus {
-			outline: none;
-		}	
 	
 		#nav ul {
 			flex-direction: column;
@@ -3497,7 +3488,7 @@ input, select, textarea {
 	
 		#nav ul li a {
 			width: 100%;
-			font-size: 1em;
+			font-size: 2em;
 			padding: 0.5em;
 			border-radius: 0.25em;
 			color: #1eba7a;
