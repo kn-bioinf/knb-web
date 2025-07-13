@@ -3445,7 +3445,7 @@ input, select, textarea {
 		box-shadow: none;
 		outline: none;
 		font-size: 2em;
-		color: #fff;
+		color: #333;
 		cursor: pointer;
 		padding: 0;
 		line-height: 1;
