@@ -3959,9 +3959,10 @@ input, select, textarea {
 }
 
 .photo_row img {
-    width: 15em;
-    height: auto;
-    object-fit: cover;
+    width: 18em;
+    height: 12em; /* Ustalony rozmiar wyświetlania */
+    object-fit: cover; /* Przycinanie do rozmiaru */
+    object-position: center; /* Wyśrodkowanie obrazu w ramce */
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
 }
 
