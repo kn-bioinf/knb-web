@@ -3454,15 +3454,16 @@ input, select, textarea {
 	@media screen and (max-width: 768px) {
 		#nav-toggle {
 			display: block;
+			color: #1eba7a;
 		}
 		
 		#nav {
 			display: none;
 			position: fixed;
-			top: 1em;
+			top: 2em;
 			left: 1em;
 			width: 12em; /* <-- to sprawia, że jest kolumną */
-			background-color: #f7f7f7;
+			background-color: transparent;
 			padding: 1em;
 			text-align: left;
 			flex-direction: column;
@@ -3497,10 +3498,6 @@ input, select, textarea {
 			border-radius: 0.25em;
 			color: #1eba7a;
 			background-color: transparent;
-		}
-	
-		#nav ul li a:hover {
-			background-color: rgba(30, 186, 122, 0.1); /* delikatna zieleń */
 		}
 	}
 
