@@ -3511,9 +3511,6 @@ input, select, textarea {
 			display: block;
 		}
 
-		#nav.alt {
-			all: revert;
-		}
 		
 		#nav {
 			display: none;
@@ -3522,12 +3519,11 @@ input, select, textarea {
 			left: 2em;
 			width: 10em; /* <-- to sprawia, że jest kolumną */
 			background-color: f7f7f7;
-			padding: 1em; 
+			padding: 1em 1em; 
 			text-align: left;
 			flex-direction: column;
 			border-radius: 0.5em;
 			box-shadow: 0 0 1em rgba(0, 0, 0, 0.15);
-			z-index: 1000;
 			color: #636363;
 			font-size: 1em;
 			background-color: rgba(247, 247, 247, 1);
@@ -3540,7 +3536,7 @@ input, select, textarea {
 			left: 2em;
 			width: 10em; /* <-- to sprawia, że jest kolumną */
 			background-color: f7f7f7;
-			padding: 1em; 
+			padding: 1em 1em; 
 			text-align: left;
 			flex-direction: column;
 			border-radius: 0.5em;
@@ -3549,10 +3545,15 @@ input, select, textarea {
 			color: #636363;
 			font-size: 1em;
 			background-color: rgba(247, 247, 247, 0.95);
+		}
 
-			max-width: revert;
-			cursor: default;
-			text-align: center;
+	
+		#nav.alt ul li {
+			margin: 0 0;
+		}
+	
+		#nav.alt ul li a {
+			font-size: 1em;
 		}
 		
 	
