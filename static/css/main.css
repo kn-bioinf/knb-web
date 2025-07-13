@@ -3479,6 +3479,10 @@ input, select, textarea {
 		#nav-toggle {
 			display: block;
 		}
+
+		#nav.alt {
+			all: revert;
+		}
 		
 		#nav {
 			display: none;
@@ -3496,10 +3500,6 @@ input, select, textarea {
 			color: #636363;
 			font-size: 1em;
 			background-color: rgba(247, 247, 247, 1);
-		}
-
-		#nav.alt {
-			all: revert;
 		}
 		
 	
