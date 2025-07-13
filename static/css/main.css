@@ -3500,7 +3500,7 @@ input, select, textarea {
 		padding: 0;
 		line-height: 1;
 		font-size: 2em;
-		color: #636363;
+		color: #636363 !important;
 		border-top-left-radius: 0;
 		border-top-right-radius: 0;
 	}
@@ -3517,7 +3517,7 @@ input, select, textarea {
 			top: 5em;
 			left: 2em;
 			width: 10em;
-			height: 17em;
+			height: 16em;
 			background-color: rgba(247, 247, 247, 1);
 			padding: 10px;
 			text-align: center;
