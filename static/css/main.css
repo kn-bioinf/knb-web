@@ -3544,6 +3544,10 @@ input, select, textarea {
 			text-align: left;
 			margin: 0;
 		}
+
+		#nav ul li a, #nav.alt ul li a {
+			font-size: 1.2em;
+		}
 	}
 			
 
