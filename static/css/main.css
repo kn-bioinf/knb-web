@@ -2657,13 +2657,13 @@ input, select, textarea {
   	}
 
 	.article-content {
-		order: 2;
+		order: 1;
 		flex: 1;
 	}
 
   	.image_posts {
 		margin-left: auto;
-		order: 1;
+		order: 2;
 	}
 	
 	.image_posts img {
@@ -2702,11 +2702,11 @@ input, select, textarea {
 		}
 
 		.article-content {
-		   	order: 1;
+		   	order: 2;
 		  }
 		
 		.image_posts {
-		    	order: 2;
+		    	order: 1;
 		}
 	}
 
