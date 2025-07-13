@@ -4,6 +4,9 @@
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
+
+<!-- Plik z listą aktualnośći-->
+
 <html>
 	<head>
 		<title>KNB UW</title>
@@ -13,121 +16,120 @@
 		<noscript><link rel="stylesheet" href="{{ "css/noscript.css" | absURL }}" /></noscript>
 		<link rel="icon" href="{{ "favicon.ico" | absURL }}" type="image/x-icon">
 	</head>
+	
 	<body class="is-preload">
 
 		<!-- Wrapper -->
-			<div id="wrapper">
+		<div id="wrapper">
 
-				<!-- Header -->
-					<header id="header" class="alt">
+			<!-- Header -->
+			<header id="header" class="alt">
 
-						<a href="https://mimuw.edu.pl/~bioinformatyka/">
-							<span class="logo">
-								<img src="{{ "images/logo_kola.jpg" | absURL }}" alt="Logo" />
-							</span>
-						</a>
+				<a href="https://mimuw.edu.pl/~bioinformatyka/">
+					<span class="logo">
+						<img src="{{ "images/logo_kola.jpg" | absURL }}" alt="Logo" />
+					</span>
+				</a>
 
-						<h1>Aktualności</h1>
+				<h1>Aktualności</h1>
 
-					</header>
+			</header>
 
-					<nav id="nav">
-					    <ul>
-					        <li><a href="https://mimuw.edu.pl/~bioinformatyka/#intro">O nas</a></li>
-					        <li><a href="https://mimuw.edu.pl/~bioinformatyka/#first">Aktualności</a></li>
-					        <li><a href="https://mimuw.edu.pl/~bioinformatyka/#second">Zarząd</a></li>
-					        <li><a href="https://mimuw.edu.pl/~bioinformatyka/#cta">Dołącz</a></li>
-					        <li><a href="https://mimuw.edu.pl/~bioinformatyka/#kontakt">Kontakt</a></li>
-					    </ul>
-					</nav>
+				<nav id="nav">
+				    <ul>
+					<li><a href="https://mimuw.edu.pl/~bioinformatyka/#intro">O nas</a></li>
+					<li><a href="https://mimuw.edu.pl/~bioinformatyka/#aktualnosci">Aktualności</a></li>
+					<li><a href="https://mimuw.edu.pl/~bioinformatyka/#zarzad">Zarząd</a></li>
+					<li><a href="https://mimuw.edu.pl/~bioinformatyka/#dolacz">Dołącz</a></li>
+					<li><a href="https://mimuw.edu.pl/~bioinformatyka/#kontakt">Kontakt</a></li>
+				    </ul>
+				</nav>
 
-				<!-- Main - O nas -->
-					<div id="main">
+				<!-- Main -->
+				<div id="main">
 
-						<!-- First Section - Aktualności-->
-							<section id="first" class="main special">
+					<!-- Aktualności-->
+					<section id="aktualnosci" class="main special">
 
-								<!-- Ograniczone do pięciu najnowszych - może paginacje? -->
-								
-									{{ $paginator := .Paginate (where .Site.RegularPages "Section" "aktualnosci") 5 }}
+						<!-- Ograniczone do pięciu najnowszych - może paginacje? -->
+						{{ $paginator := .Paginate (where .Site.RegularPages "Section" "aktualnosci") 5 }}
 
-									{{ range $paginator.Pages }}
-									    <article>
-									        <div class="article-content">
-									            <h3>
-									                {{ .Params.Title }}
-									            </h3>
-									            <p>{{ .Params.Summary }}</p>
-									            <p>{{ .Params.Date.Format "2.01.2006" }}</p>
-									            <a href="{{ .Permalink }}" class="button primary">Czytaj więcej</a>
-									        </div>
+						{{ range $paginator.Pages }}
+						    <article>
+							    <div class="article-content">
+								    <h3>
+									{{ .Params.Title }}
+								    </h3>
+								    <p>{{ .Params.Summary }}</p>
+								    <p>{{ .Params.Date.Format "2.01.2006" }}</p>
+								    <a href="{{ .Permalink }}" class="button primary">Czytaj więcej</a>
+							    </div>
+							    
+							    <!-- obrazek -->
+							    {{ if .Params.image }}
+								    <div class="image_posts">
+									    <img src="{{ .Params.image | absURL }}" alt="{{ .Title }}">
+								    </div>
+							    {{ end }}
+						    </article>
+						{{ end }}
 
-									        {{ if .Params.image }}
-									            <div class="image_posts">
-									                <img src="{{ .Params.image | absURL }}" alt="{{ .Title }}">
-									            </div>
-									        {{ end }}
-									    </article>
-									{{ end }}
+						<!-- Paginacje -->
+						<div class="pagination">
+						    {{ if $paginator.HasPrev }}
+							<a href="{{ $paginator.First.URL }}" class="button_pag">⏮</a>
+							<a href="{{ $paginator.Prev.URL }}" class="button_pag">◀</a>
+						    {{ end }}
 
-									<div class="pagination">
-									    {{ if $paginator.HasPrev }}
-									        <a href="{{ $paginator.First.URL }}" class="button_pag">⏮</a>
-									        <a href="{{ $paginator.Prev.URL }}" class="button_pag">◀</a>
-									    {{ end }}
+						    <span class="current-page">Strona {{ $paginator.PageNumber }} z {{ $paginator.TotalPages }}</span>
 
-									    <span class="current-page">Strona {{ $paginator.PageNumber }} z {{ $paginator.TotalPages }}</span>
+						    {{ if $paginator.HasNext }}
+							<a href="{{ $paginator.Next.URL }}" class="button_pag">▶</a>
+							<a href="{{ $paginator.Last.URL }}" class="button_pag">⏭</a>
+						    {{ end }}
+						</div>
 
-									    {{ if $paginator.HasNext }}
-									        <a href="{{ $paginator.Next.URL }}" class="button_pag">▶</a>
-									        <a href="{{ $paginator.Last.URL }}" class="button_pag">⏭</a>
-									    {{ end }}
-									</div>
+					</section>
 
-							</section>
-
-					</div>
+				</div>
 
 				<!-- Footer -->
-					<footer id="footer">
-						<section id="kontakt">
-							
-							<h2>Kontakt</h2>
-							<dl class="alt">
-								<dt>Adres</dt>
-								<dd>Stefana Banacha 2 &bull; Warszawa, 02-097</dd>
-								<dt>Email</dt>
-								<dd><a href="#">kn.bioinf@uw.edu.pl</a></dd>
-							</dl>
-							<ul class="icons">
-								
-								<li><a href="https://www.facebook.com/Bioinformatyka.UW/" target='_blank' class="icon brands fa-facebook-f alt"><span class="label">Facebook</span></a></li>
-								<li><a href="https://www.instagram.com/bioinformatyka_uw/" target='_blank' class="icon brands fa-instagram alt"><span class="label">Instagram</span></a></li>
-								
-							</ul>
+				<footer id="footer">
+					<section id="kontakt">
+						
+						<h2>Kontakt</h2>
+						<dl class="alt">
+							<dt>Adres</dt>
+							<dd>Stefana Banacha 2 &bull; Warszawa, 02-097</dd>
+							<dt>Email</dt>
+							<dd><a href="#">kn.bioinf@uw.edu.pl</a></dd>
+						</dl>
+						
+						<ul class="icons">
+							<li><a href="https://www.facebook.com/Bioinformatyka.UW/" target='_blank' class="icon brands fa-facebook-f alt"><span class="label">Facebook</span></a></li>
+							<li><a href="https://www.instagram.com/bioinformatyka_uw/" target='_blank' class="icon brands fa-instagram alt"><span class="label">Instagram</span></a></li>
+							<li><a href="https://github.com/kn-bibs" target="_blank" class="icon brands fa-github alt"><span class="label">GitHub</span></a></li>
+						</ul>
 
-						</section>
+					</section>
 
-						<section>
-							<a href="https://mimuw.edu.pl" target="_blank" class="mimuw">
-
-							    <img src="{{ "images/logo_wydzialu2.png" | absURL }}" alt="Wydział MIMUW" />
-
-							</a>
-						</section>	
-						<p class="copyright">&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
-					</footer>
-
-			</div>
+					<section>
+						<a href="https://mimuw.edu.pl" target="_blank" class="mimuw">
+						    <img src="{{ "images/logo_wydzialu2.png" | absURL }}" alt="Wydział MIMUW" />
+						</a>
+					</section>	
+					<p class="copyright">&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+				</footer>
+		</div>
 
 		<!-- Scripts -->
-			<script src="{{ "js/jquery.min.js" | absURL }}"></script>
-			<script src="{{ "js/jquery.scrollex.min.js" | absURL }}"></script>
-			<script src="{{ "js/jquery.scrolly.min.js" | absURL }}"></script>
-			<script src="{{ "js/browser.min.js" | absURL }}"></script>
-			<script src="{{ "js/breakpoints.min.js" | absURL }}"></script>
-			<script src="{{ "js/util.js" | absURL }}"></script>
-			<script src="{{ "js/main.js" | absURL }}"></script>
+		<script src="{{ "js/jquery.min.js" | absURL }}"></script>
+		<script src="{{ "js/jquery.scrollex.min.js" | absURL }}"></script>
+		<script src="{{ "js/jquery.scrolly.min.js" | absURL }}"></script>
+		<script src="{{ "js/browser.min.js" | absURL }}"></script>
+		<script src="{{ "js/breakpoints.min.js" | absURL }}"></script>
+		<script src="{{ "js/util.js" | absURL }}"></script>
+		<script src="{{ "js/main.js" | absURL }}"></script>
 
 	</body>
 </html>
