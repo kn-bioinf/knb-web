@@ -4090,6 +4090,6 @@ input, select, textarea {
 	font-size: 1.4em;
 }
 
-p {
+.justified {
     text-align: justify;
 }
