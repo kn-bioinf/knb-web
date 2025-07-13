@@ -4089,3 +4089,7 @@ input, select, textarea {
 #cta div{
 	font-size: 1.4em;
 }
+
+p {
+    text-align: justify;
+}
