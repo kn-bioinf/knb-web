@@ -9,6 +9,8 @@ image = 'images/gront.jpg'
 
 <!-- Tutaj START - cała treść posta -->
 
+# Spotkanie z dr. hab. Dominikiem Grontem #
+
 Kochani! Wracamy z prelekcjami!
 
 Już 27 marca (czwartek) o 15:30 odwiedzi nas dr hab. Dominik Gront z Zakładu Chemii Teoretycznej i Strukturalnej Wydziału Chemii.
