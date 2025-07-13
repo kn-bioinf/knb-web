@@ -3437,16 +3437,21 @@ input, select, textarea {
 	#nav-toggle {
 		display: none;
 		position: fixed;
-		top: 0;
-		left: 0;
+		top: 1;
+		left: 1;
 		z-index: 10001;
 		background: none;
 		border: none;
-		font-size: 1.8em;
+		font-size: 2em;
 		color: #1eba7a;
 		cursor: pointer;
 		padding: 0;
 		line-height: 1;
+	}
+
+	
+	#nav-toggle:focus {
+		outline: none;
 	}
 
 
