@@ -4,6 +4,7 @@
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
+
 <html>
 	<head>
 		<title>KNB UW</title>
@@ -13,197 +14,207 @@
 		<noscript><link rel="stylesheet" href="{{ "css/noscript.css" | absURL }}" /></noscript>
 		<link rel="icon" href="{{ "favicon.ico" | relURL }}" type="image/x-icon">
 	</head>
+	
 	<body class="is-preload">
 
 		<!-- Wrapper -->
-			<div id="wrapper">
+		<div id="wrapper">
 
-				<!-- Header -->
-					<header id="header" class="alt">
-						<span class="logo"><img src="{{ "images/logo_kola.jpg" | absURL }}" alt="" /></span>
-						<h1>Koło Naukowe Bioinformatyki UW</h1>
-						<p>Programujemy przyszłość biologii!<br />
+			<!-- Header -->
+			<header id="header" class="alt">
+				<span class="logo"><img src="{{ "images/logo_kola.jpg" | absURL }}" alt="" /></span>
+				<h1>Koło Naukowe Bioinformatyki UW</h1>
+				<p>Programujemy przyszłość biologii!<br />
+			</header>
+
+			<!-- Nav - pasek na górze -->
+			<nav id="nav">
+				<ul>
+					<li><a href="#intro" class="active">O nas</a></li>
+					<li><a href="#first">Aktualności</a></li>
+					<li><a href="#second">Zarząd</a></li>
+					<li><a href="#cta">Dołącz</a></li>
+					<li><a href="#kontakt">Kontakt</a></li>
+				</ul>
+			</nav>
+
+			<!-- Main -->
+			<div id="main">
+
+				<!-- Introduction - O nas -->
+				<section id="intro" class="main">
+					
+				    	<div class="spotlight">
+						
+						<div class="content">
+							
+							<!-- Nagłówek i tekst -->
+							<header class="major">
+								<h2>O nas</h2>
+							</header>
+								
+							<!-- Sekcja ze zdjęciami -->
+							<div class="photo_row">
+								<img src="{{ "images/o_nas2.jpg" | absURL }}" alt="foto 1" />
+								<img src="{{ "images/o_nas1.jpg" | absURL }}" alt="foto 2" />
+								<img src="{{ "images/fota_nas.jpg" | absURL }}" alt="foto 3" />
+							</div>
+							
+							<p class="justified">
+								Koło Naukowe Bioinformatyki zrzesza ludzi o różnorodnych zainteresowaniach, których łączy pasja do odkrywania tajemnic biologii przy użyciu matematyki oraz informatyki.
+								Wśród naszych członków znajdziecie zarówno miłośników sztucznej inteligencji i algorytmów, jak i wielbicieli genomiki czy modelowania struktur białkowych.
+								Wspólnie tworzymy miejsce do wymiany wiedzy oraz rozwijania interdyscyplinarnych pasji. Organizujemy spotkania z prelegentami, popularyzujemy bioinformatykę i aktywnie uczestniczymy
+								w wydarzeniach naukowych takich jak DOKO i Biomeeting. A jeśli po prostu szukasz rozmowy o matematyce, biologii czy programowaniu – to również znajdziesz tu wspaniałe towarzystwo! Bez względu na to, czy jesteś programistą, myślącym o DNA jako o bardzo długim stringu, czy biologiem, dla którego BLAST to nie tylko wybuch, Koło Naukowe Bioinformatyki jest idealnym miejscem dla Ciebie!
+							</p>
+						
+						</div>
+				    	</div>
+				</section>
+					
+						
+
+
+				<!-- First Section - Aktualności-->
+				<section id="first" class="main special">
+					<header class="major">
+						<h2 class='header22'>Aktualności</h2>
+					</header>
+					
+					<!-- Ograniczone do trzech najnowszych -->
+					{{ range first 3 (sort (where .Site.RegularPages "Section" "aktualnosci") ".Date" "desc")}}
+					
+					<article>
+						<div class="article-content">
+							
+							<!-- Treść artykułu -->
+							<h3>
+								{{ .Params.Title }}
+							</h3>
+							
+							<p>{{ .Params.Summary }}</p>
+							<p>{{ .Params.Date.Format "2.01.2006" }}</p>
+							<a href="{{ .Permalink }}" class="button primary">Czytaj więcej</a>
+						
+						</div>
+	
+						<!-- Obrazek, który pojawi się po prawej stronie, jeśli jakiś jest -->
+						{{ if .Params.image }}
+						    <span class="image_posts">
+							<img src="{{ .Params.image }}" alt="{{ .Title }}">
+						    </span>
+						{{ end }}
+					</article>
+					
+					{{ end }}
+	
+					<p></p>
+					<a href="{{ "aktualnosci" | absURL }}" class="button primary">Pozostałe wydarzenia</a>
+
+				</section>
+
+				<!-- Second Section - Członkowie  -->
+				<section id="second" class="main special">
+					
+					<header class="major">
+						<h2 class='header22'>Zarząd</h2>
 					</header>
 
-				<!-- Nav -->
-					<nav id="nav">
-						<ul>
-							<li><a href="#intro" class="active">O nas</a></li>
-							<li><a href="#first">Aktualności</a></li>
-							<li><a href="#second">Zarząd</a></li>
-							<li><a href="#cta">Dołącz</a></li>
-							<li><a href="#kontakt">Kontakt</a></li>
-						</ul>
-					</nav>
-
-				<!-- Main - O nas -->
-					<div id="main">
-
-						<!-- Introduction -->
-							<section id="intro" class="main">
-							    <div class="spotlight">
-							        <div class="content">
-
-								   <!-- Nagłówek i tekst -->
-							            <header class="major">
-							                <h2>O nas</h2>
-							            </header>
-									
-							            <!-- Sekcja ze zdjęciami -->
-							            <div class="photo_row">
-							                <img src="{{ "images/o_nas2.jpg" | absURL }}" alt="foto 1" />
-							                <img src="{{ "images/o_nas1.jpg" | absURL }}" alt="foto 2" />
-							                <img src="{{ "images/fota_nas.jpg" | absURL }}" alt="foto 3" />
-							            </div>
-									
-									<p class="justified">Koło Naukowe Bioinformatyki zrzesza ludzi o różnorodnych zainteresowaniach, których łączy pasja do odkrywania tajemnic biologii przy użyciu matematyki oraz informatyki.
-Wśród naszych członków znajdziecie zarówno miłośników sztucznej inteligencji i algorytmów, jak i wielbicieli genomiki czy modelowania struktur białkowych.
-Wspólnie tworzymy miejsce do wymiany wiedzy oraz rozwijania interdyscyplinarnych pasji. Organizujemy spotkania z prelegentami, popularyzujemy bioinformatykę i aktywnie uczestniczymy
-w wydarzeniach naukowych takich jak DOKO i Biomeeting. A jeśli po prostu szukasz rozmowy o matematyce, biologii czy programowaniu – to również znajdziesz tu wspaniałe towarzystwo! Bez względu na to, czy jesteś programistą, myślącym o DNA jako o bardzo długim stringu, czy biologiem, dla którego BLAST to nie tylko wybuch, Koło Naukowe Bioinformatyki jest idealnym miejscem dla Ciebie!
-									</p>
-								</div>
-							    </div>
-							</section>
+					<div class="people_container">
+						
+					    	<!-- Rząd 1: Prezes + Wiceprezes w jednej linii -->
+						<div class="top_row">
 							
-								
-	
-
-						<!-- First Section - Aktualności-->
-							<section id="first" class="main special">
-								<header class="major">
-									<h2 class='header22'>Aktualności</h2>
-								</header>
-								
-								<!-- Ograniczone do pięciu najnowszych - może paginacje? -->
-								
-								{{ range first 3 (sort (where .Site.RegularPages "Section" "aktualnosci") ".Date" "desc")}}
-								
-      								<article>
-            							<div class="article-content">
-                						<!-- Treść artykułu -->
-                						<h3>
-                							{{ .Params.Title }}
-                						</h3>
-                						<p>{{ .Params.Summary }}</p>
-                						<p>{{ .Params.Date.Format "2.01.2006" }}</p>
-                						<a href="{{ .Permalink }}" class="button primary">Czytaj więcej</a>
-                						
-            							</div>
-            
-            						<!-- Obrazek, który pojawi się po prawej stronie, jeśli jakiś jest -->
-									{{ if .Params.image }}
-									    <span class="image_posts">
-									        <img src="{{ .Params.image }}" alt="{{ .Title }}">
-									    </span>
-									  
-									{{ end }}
-								    </article>
-      								
-    							{{ end }}
-
-    							<p></p>
-								<a href="{{ "aktualnosci" | absURL }}" class="button primary">Pozostałe wydarzenia</a>
-
-							</section>
-
-						<!-- Second Section - Członkowie  -->
-							<section id="second" class="main special">
-								<header class="major">
-									<h2 class='header22'>Zarząd</h2>
-								</header>
-
-								<div class="people_container">
-
-								    <!-- Rząd 1: Prezes + Wiceprezes w jednej linii -->
-								    <div class="top_row">
-								        {{ range where .Site.RegularPages "Section" "prezes" }}
-								        <div class="person_block">
-								            <h4>{{ .Params.Name }} {{ .Params.Surname }}</h4>
-								            <p><strong>{{ .Params.Role }}</strong></p>
-								        </div>
-								        {{ end }}
-								
-								        {{ range where .Site.RegularPages "Section" "wiceprezes" }}
-								        <div class="person_block">
-								            <h4>{{ .Params.Name }} {{ .Params.Surname }}</h4>
-								            <p><strong>{{ .Params.Role }}</strong></p>
-								        </div>
-								        {{ end }}
-								    </div>
-								
-								    <!-- Rząd 2: Zarząd -->
-								    <div class="zarzad_row">
-								        {{ range where .Site.RegularPages "Section" "zarzad" }}
-								        <div class="person_block">
-								            <h4>{{ .Params.Name }} {{ .Params.Surname }}</h4>
-								            <p><strong>{{ .Params.Role }}</strong></p>
-								        </div>
-								        {{ end }}
-								    </div>
-								
-								    <!-- Rząd 3: Członkowie -->
-								    <div class="czlonkowie_row">
-								        {{ range where .Site.RegularPages "Section" "czlonkowie" }}
-								        <div class="person_block">
-								            <h4>{{ .Params.Name }} {{ .Params.Surname }}</h4>
-								            <p>Zainteresowania: {{ .Params.Interests }}</p>
-								        </div>
-								        {{ end }}
-								    </div>
-								
-								</div>
-							</section>
-
-						<!-- Get Started -->
-							<section id="cta" class="main special">
-								<header class="major">
-									<h2 class='header22'>Dołącz do nas już dziś!</h2>
-									
-									<div><a href='https://docs.google.com/forms/d/e/1FAIpQLSfJ250HODn92UdZmWPW7D9Qoi0OYoICS4nwmpXIwKbwfWoAUw/viewform' target='_blank'>Formularz zgłoszeniowy </a></div>
-									<div><a href='{{ "files/Regulamin.pdf" | absURL }}' target='_blank'>Regulamin Koła</a></div>
-
-								</header>
-							</section>
-
+							{{ range where .Site.RegularPages "Section" "prezes" }}
+							<div class="person_block">
+							    <h4>{{ .Params.Name }} {{ .Params.Surname }}</h4>
+							    <p><strong>{{ .Params.Role }}</strong></p>
+							</div>
+							{{ end }}
+						
+							{{ range where .Site.RegularPages "Section" "wiceprezes" }}
+							<div class="person_block">
+							    <h4>{{ .Params.Name }} {{ .Params.Surname }}</h4>
+							    <p><strong>{{ .Params.Role }}</strong></p>
+							</div>
+							{{ end }}
+							
+						</div>
+						
+					
+						<!-- Rząd 2: Zarząd -->
+						<div class="zarzad_row">
+							
+							{{ range where .Site.RegularPages "Section" "zarzad" }}
+							<div class="person_block">
+							    <h4>{{ .Params.Name }} {{ .Params.Surname }}</h4>
+							    <p><strong>{{ .Params.Role }}</strong></p>
+							</div>
+							{{ end }}
+						</div>
+					
+					    	<!-- Rząd 3: Członkowie -->
+						<div class="czlonkowie_row">
+							
+							{{ range where .Site.RegularPages "Section" "czlonkowie" }}
+							<div class="person_block">
+							    <h4>{{ .Params.Name }} {{ .Params.Surname }}</h4>
+							    <p>Zainteresowania: {{ .Params.Interests }}</p>
+							</div>
+							{{ end }}
+						</div>
 					</div>
+				</section>
 
-				<!-- Footer -->
-					<footer id="footer">
-						<section id="kontakt">
-							<h2>Kontakt</h2>
-							<dl class="alt">
-								<dt>Adres</dt>
-								<dd>Stefana Banacha 2 &bull; Warszawa, 02-097</dd>
-								<dt>Email</dt>
-								<dd><a href="#">kn.bioinf@uw.edu.pl</a></dd>
-							</dl>
-							<ul class="icons">
-								<li><a href="https://www.facebook.com/Bioinformatyka.UW/" target='_blank' class="icon brands fa-facebook-f alt"><span class="label">Facebook</span></a></li>
-								<li><a href="https://www.instagram.com/bioinformatyka_uw/" target='_blank' class="icon brands fa-instagram alt"><span class="label">Instagram</span></a></li>
-								<li><a href="https://github.com/kn-bibs" target="_blank" class="icon brands fa-github alt"><span class="label">GitHub</span></a></li>
-							</ul>
-						</section>
+				<!-- Dołącz do nas -->
+				<section id="cta" class="main special">
+					<header class="major">
+						<h2 class='header22'>Dołącz do nas już dziś!</h2>
+						
+						<div><a href='https://docs.google.com/forms/d/e/1FAIpQLSfJ250HODn92UdZmWPW7D9Qoi0OYoICS4nwmpXIwKbwfWoAUw/viewform' target='_blank'>Formularz zgłoszeniowy </a></div>
+						<div><a href='{{ "files/Regulamin.pdf" | absURL }}' target='_blank'>Regulamin Koła</a></div>
 
-						<section>
-							<a href="https://mimuw.edu.pl" target="_blank" class="mimuw">
-
-							    <img src="{{ "images/logo_wydzialu2.png" | absURL }}" alt="Wydział MIMUW" />
-
-							</a>
-						</section>	
-						<p class="copyright">&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
-					</footer>
+					</header>
+				</section>
 
 			</div>
 
+			<!-- Footer -->
+			<footer id="footer">
+				<section id="kontakt">
+					<h2>Kontakt</h2>
+					<dl class="alt">
+						<dt>Adres</dt>
+						<dd>Stefana Banacha 2 &bull; Warszawa, 02-097</dd>
+						<dt>Email</dt>
+						<dd><a href="#">kn.bioinf@uw.edu.pl</a></dd>
+					</dl>
+					<ul class="icons">
+						<li><a href="https://www.facebook.com/Bioinformatyka.UW/" target='_blank' class="icon brands fa-facebook-f alt"><span class="label">Facebook</span></a></li>
+						<li><a href="https://www.instagram.com/bioinformatyka_uw/" target='_blank' class="icon brands fa-instagram alt"><span class="label">Instagram</span></a></li>
+						<li><a href="https://github.com/kn-bibs" target="_blank" class="icon brands fa-github alt"><span class="label">GitHub</span></a></li>
+					</ul>
+				</section>
+
+				<section>
+					<a href="https://mimuw.edu.pl" target="_blank" class="mimuw">
+						<img src="{{ "images/logo_wydzialu2.png" | absURL }}" alt="Wydział MIMUW" />
+					</a>
+				</section>
+				
+				<p class="copyright">&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+				
+			</footer>
+
+		</div>
+
 		<!-- Scripts -->
-			<script src="{{ "js/jquery.min.js" | absURL }}"></script>
-			<script src="{{ "js/jquery.scrollex.min.js" | absURL }}"></script>
-			<script src="{{ "js/jquery.scrolly.min.js" | absURL }}"></script>
-			<script src="{{ "js/browser.min.js" | absURL }}"></script>
-			<script src="{{ "js/breakpoints.min.js" | absURL }}"></script>
-			<script src="{{ "js/util.js" | absURL }}"></script>
-			<script src="{{ "js/main.js" | absURL }}"></script>
+		<script src="{{ "js/jquery.min.js" | absURL }}"></script>
+		<script src="{{ "js/jquery.scrollex.min.js" | absURL }}"></script>
+		<script src="{{ "js/jquery.scrolly.min.js" | absURL }}"></script>
+		<script src="{{ "js/browser.min.js" | absURL }}"></script>
+		<script src="{{ "js/breakpoints.min.js" | absURL }}"></script>
+		<script src="{{ "js/util.js" | absURL }}"></script>
+		<script src="{{ "js/main.js" | absURL }}"></script>
 
 	</body>
 </html>
