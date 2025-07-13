@@ -3484,7 +3484,19 @@ input, select, textarea {
 		}
 
 		#nav.alt {
-			all: unset;
+			display: none;
+			position: fixed;
+			top: 5em;
+			left: 2em;
+			width: 10em; /* <-- to sprawia, że jest kolumną */
+			background-color: f7f7f7;
+			padding: 1em;
+			text-align: left;
+			flex-direction: column;
+			border-radius: 0.5em;
+			box-shadow: 0 0 1em rgba(0, 0, 0, 0.15);
+			z-index: 1000;
+			color: #636363;
 		}
 	
 		#nav.open {
