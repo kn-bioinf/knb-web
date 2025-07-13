@@ -3447,13 +3447,14 @@ input, select, textarea {
 		cursor: pointer;
 		padding: 0;
 		line-height: 1;
-		font-size: 5em;
+		font-size: 2em;
 	}
 
 
 	@media screen and (max-width: 768px) {
 		#nav-toggle {
 			display: block;
+			color: #666;
 		}
 		
 		#nav {
@@ -3491,7 +3492,7 @@ input, select, textarea {
 			font-size: 2em;
 			padding: 0.5em;
 			border-radius: 0.25em;
-			color: #1eba7a;
+			color: #fff;
 			background-color: transparent;
 		}
 	}
