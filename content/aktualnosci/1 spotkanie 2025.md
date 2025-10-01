@@ -3,7 +3,7 @@ title = 'Pierwsze spotkanie w tym roku!'
 date = '2025-10-01'
 draft = 'false'
 tags = ['nauka', 'zabawa']
-summary = "16 października odbędzie się pierwsze spotkanie Koła w tym roku akademickim!""
+summary = "16 października odbędzie się pierwsze spotkanie Koła w tym roku akademickim!"
 image = '1spotkanie2025.png'
 +++
 
