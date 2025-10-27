@@ -18,7 +18,7 @@ Omówimy na nim dwa artykuły:
 2. Inferring gene-regulatory networks using epigenomic priors (https://www.biorxiv.org/.../2024.04.23.590858v6.full...)
 
 
-Przed spotkaniem rzućcie na nie okiem 👀
+Przed spotkaniem rzućcie na nie okiem
 
 
-W ramach działalności Journal Clubu chcemy omawiać tzw. preprinty, czyli jeszcze nieopublikowane artykuły naukowe. Poza merytorycznym omówieniem opisanych w nich badań skupimy się też na ocenie wartości naukowej i stylu pisania. Mamy nadzieję, że dołączycie do nas! ❤
+W ramach działalności Journal Clubu chcemy omawiać tzw. preprinty, czyli jeszcze nieopublikowane artykuły naukowe. Poza merytorycznym omówieniem opisanych w nich badań skupimy się też na ocenie wartości naukowej i stylu pisania. Mamy nadzieję, że dołączycie do nas!
