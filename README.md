@@ -11,6 +11,7 @@ W celu modyfikacji strony, zamiast logować się na serwer, wystarczy dodać zmi
 
 ### Dodanie artykułu w aktualnościach
 Każdy artykuł to plik **.md** w katalogu `content/aktualnosci`. Standardowy format artykułu wymaga nagłówka:
+
     +++
     title = "<tytuł artykułu>"
     date = "<YYYY-MM-DD>"        # wymagana do ustalenia kolejności artykułów
@@ -19,8 +20,8 @@ Każdy artykuł to plik **.md** w katalogu `content/aktualnosci`. Standardowy fo
     summary = ""                 # tekst wyświetlany na liście artykułów
     image = "<ścieżka/do/pliku>" # pliki w static/images, ścieżka zaczyna się od "images/"
     +++
-
-    Resztę treści wystarczy napisać w standardowym formacie Markdown
+    
+Resztę treści wystarczy napisać w standardowym formacie Markdown
 
 ---
 
