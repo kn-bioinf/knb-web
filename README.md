@@ -9,7 +9,17 @@ Hugo to framework zalecany przez Laboratorium Komputerowe MIMUW.
 
 W celu modyfikacji strony, zamiast logować się na serwer, wystarczy dodać zmiany na tym repozytorium GitHub.
 
-...
+### Dodanie artykułu w aktualnościach
+Każdy artykuł to plik **.md** w katalogu `content/aktualnosci`. Standardowy format artykułu wymaga nagłówka:
+    +++
+    title = '<tytuł artykułu>'
+    date = '<YYY-MM-DD>' # wymagana do ustalenia odpowiedniej kolejności artykułów na stronie
+    draft = '<true/false>'
+    tags = ['nauka', 'zabawa']
+    summary = "" # tekst wyświetlany na liście artykułów
+    image = '<ścieżka/do/pliku>' # pliki należy umieści w katalogu static/images. Podawana tu ścieżka musi zaczynać się od "images/"  
+    +++
+    Resztę treści wystarczy napisać w standardowym formacie Markdown
 
 ---
 
