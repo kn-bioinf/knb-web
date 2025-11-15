@@ -1,4 +1,4 @@
-# Strona Koła Bioinformatycznego
+# Strona Koła Naukowego Bioinformatyki
 
 Strona Koła hostowana jest na serwerze **mimsrv**. Na podstawie znajdujących się tam plików generowana jest statyczna strona Hugo.  
 Hugo to framework zalecany przez Laboratorium Komputerowe MIMUW.
