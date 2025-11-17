@@ -56,5 +56,4 @@ Zawiera parametr `baseURL` — w przypadku zmiany domeny należy zaktualizować 
 
 ## Logowanie na serwer SSH
 
-Logowanie możliwe jest za pomocą kluczy SSH przez `ssh knbioinf@mimsrv.mimuw.edu.pl`
-W celu pozyskania klucza i dalszych informacji należy zgłosić się do ostatniego zarządzającego stroną **[Stanisław Gołębiewski]** lub opiekuna Koła **[Aleksander Jankowski]**.
+Logowanie możliwe jest za pomocą kluczy SSH. W celu pozyskania klucza i dalszych informacji należy zgłosić się do ostatniego zarządzającego stroną **[Stanisław Gołębiewski]** lub opiekuna Koła **[Aleksander Jankowski]**.
