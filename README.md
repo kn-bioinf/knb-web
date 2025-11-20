@@ -7,21 +7,21 @@ Hugo to framework zalecany przez Laboratorium Komputerowe MIMUW.
 
 ## Modyfikacja contentu na stronie
 
-W celu modyfikacji strony, zamiast logować się na serwer, wystarczy dodać zmiany na tym repozytorium GitHub.
+W celu modyfikacji strony, <u>zamiast logować się na serwer, wystarczy dodać zmiany na tym repozytorium GitHub</u>.
 
 ### Dodanie artykułu w aktualnościach
-Każdy artykuł to plik **.md** w katalogu `content/aktualnosci`. Standardowy format artykułu wymaga nagłówka:
+Każdy artykuł, to osobny plik **.md** w katalogu `content/aktualnosci`. Standardowy format artykułu wymaga nagłówka:
 
     +++
     title = "<tytuł artykułu>"
     date = "<YYYY-MM-DD>"        # wymagana do ustalenia kolejności artykułów
-    draft = "<true/false>"
-    tags = ["nauka", "zabawa"]
+    draft = "<true/false>"       # określa czy artykuł jest w wersji roboczej (false publikuje artykuł na stronie)
+    tags = ["nauka", "zabawa"]   # tagi, których użycie nie jest na razie zaimplementowane
     summary = ""                 # tekst wyświetlany na liście artykułów
-    image = "<ścieżka/do/pliku>" # pliki w static/images, ścieżka zaczyna się od "images/"
+    image = "<images/ścieżka/do/pliku>" # głowny baner artykułu - plik należy umieścić w static/images, ścieżka zaczyna się od "images/"
     +++
     
-Resztę treści wystarczy napisać w standardowym formacie Markdown
+Resztę treści wystarczy napisać w standardowym formacie Markdown.
 
 ---
 
@@ -50,7 +50,7 @@ Sekrety:
 
 ### • Pliku `hugo.toml`
 Konfiguruje stronę Hugo.  
-Zawiera parametr `baseURL` — w przypadku zmiany domeny należy zaktualizować jego wartość.
+Zawiera parametr `baseURL` - w przypadku zmiany domeny należy zaktualizować jego wartość.
 
 ---
 
