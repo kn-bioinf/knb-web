@@ -7,7 +7,7 @@ Hugo to framework zalecany przez Laboratorium Komputerowe MIMUW.
 
 ## Modyfikacja contentu na stronie
 
-W celu modyfikacji strony, <u>zamiast logować się na serwer, wystarczy dodać zmiany na tym repozytorium GitHub</u>.
+W celu modyfikacji strony, <ins>zamiast logować się na serwer, wystarczy dodać zmiany na tym repozytorium GitHub</ins>.
 
 ### Dodanie artykułu w aktualnościach
 Każdy artykuł, to osobny plik **.md** w katalogu `content/aktualnosci`. Standardowy format artykułu wymaga nagłówka:
