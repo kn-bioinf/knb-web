@@ -4061,7 +4061,7 @@ input, select, textarea {
 	
 	.photo_row img {
 	    flex: 1 1 auto;     /* allow shrinking */
-   		max-width: 15em;    /* but not larger than your original size */
+   		max-width: 17em;    /* but not larger than your original size */
 	    height: 12em; /* Ustalony rozmiar wyświetlania */
 	    object-fit: cover; /* Przycinanie do rozmiaru */
 	    object-position: center; /* Wyśrodkowanie obrazu w ramce */
