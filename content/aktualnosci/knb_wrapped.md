@@ -4,7 +4,7 @@ date = '2026-01-06'
 draft = 'false'
 tags = ['nauka', 'zabawa']
 summary = "Kilka statystyk z ubiegłego roku"
-image = 'images/knb_wrapped.png'
+image = 'images/knb_wrapped.jpg'
 +++
 
 <!-- Tutaj START - cała treść posta -->
