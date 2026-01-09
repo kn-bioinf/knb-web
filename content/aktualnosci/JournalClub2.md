@@ -1,5 +1,5 @@
 +++
-title = 'Spotkanie Journal Club'
+title = 'Journal Club'
 date = '2026-01-09'
 draft = 'false'
 tags = ['nauka', 'zabawa']
