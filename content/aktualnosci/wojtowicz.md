@@ -1,10 +1,10 @@
 +++
 title = 'Spotkanie z dr. Damianem Wójtowiczem'
-date = '2023-03-05'
+date = '2026-03-05'
 draft = 'false'
 tags = ['nauka', 'zabawa']
 summary = "12 marca odwiedzi nas doktor Damian Wójtowicz z prelekcją \"Nie tylko podwójna helisa, czyli niekanoniczne struktury DNA\""
-image = 'images/wojtowicz.jpg'
+image = 'images/wojtowicz.png'
 +++
 
 <!-- Tutaj START - cała treść posta -->
