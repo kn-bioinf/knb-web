@@ -1,6 +1,6 @@
 +++
 title = 'Prelekcja z mgr. Marcinem Możejką'
-date = '2025-04-14'
+date = '2026-04-14'
 draft = 'false'
 tags = ['nauka', 'zabawa']
 summary = "16 kwietnia odbędzie się prelekcja o tytule \"Modelling peptides from scratch\"."
