@@ -1,0 +1,45 @@
+<style>
+  /* === KNB: styl ekranu ładowania (wstrzykiwany przez build-game.sh) === */
+  body { background-color: #ffffff !important; }
+
+  /* Wyśrodkowany komunikat ładowania na białym tle */
+  #transfer {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+    text-align: center;
+  }
+
+  /* Komunikat "Downloading..." jak przycisk "Zagraj całą grę" (granatowy/niebieski) */
+  #status {
+    display: inline-block;
+    margin: 0 0 14px 0;
+    padding: 12px 28px;
+    border-radius: 10px;
+    background-color: #4682c8;   /* config.ACCENT z gry = rgb(70,130,200) */
+    color: #ffffff !important;
+    font-weight: bold;
+    font-family: arial, sans-serif;
+    box-shadow: 0 2px 8px rgba(15, 25, 55, 0.25);
+  }
+
+  #progress {
+    width: 300px;
+    height: 16px;
+    accent-color: #4682c8;
+  }
+
+  /* Gdyby pojawiło się dodatkowe okienko statusu — w tym samym stylu */
+  #infobox {
+    background: #4682c8 !important;
+    color: #ffffff !important;
+    border-radius: 10px;
+  }
+
+  /* Usuwamy pomarańczową ramkę focusu (kanwa ma tabindex, więc przeglądarka
+     rysuje wokół niej obwódkę po kliknięciu/podczas ładowania). */
+  canvas, #canvas, #canvas3d, #pyconsole, #terminal, iframe { outline: none !important; }
+  :focus, :focus-visible { outline: none !important; }
+</style>
