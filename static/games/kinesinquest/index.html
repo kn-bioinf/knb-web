@@ -331,6 +331,27 @@ function show_infobox() {
   canvas, #canvas, #canvas3d, #pyconsole, #terminal, iframe { outline: none !important; }
   :focus, :focus-visible { outline: none !important; }
 </style>
+<script>
+  /* Blokujemy monit „czy na pewno opuścić stronę?" (beforeunload). Osadzona
+     gra nie powinna pytać przy odświeżeniu/wyjściu - ani na desktopie, ani na
+     telefonie. Handler rejestruje zarówno pygbag (onbeforeunload), jak i
+     emscripten (addEventListener("beforeunload")) - blokujemy oba, zanim
+     runtime zdąży je ustawić (ten skrypt wykonuje się przed async pythons.js). */
+  (function () {
+    try {
+      var _add = window.addEventListener;
+      window.addEventListener = function (type) {
+        if (String(type).toLowerCase() === "beforeunload") return;
+        return _add.apply(this, arguments);
+      };
+      Object.defineProperty(window, "onbeforeunload", {
+        configurable: true,
+        get: function () { return null; },
+        set: function () {}
+      });
+    } catch (e) {}
+  })();
+</script>
 
 </head>
 
