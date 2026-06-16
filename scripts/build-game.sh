@@ -55,6 +55,12 @@ sed -i 's/data-os="vtx,snd,gui"/data-os="snd,gui"/' "$BUILD_WEB/index.html"
 echo ">> Ustawiam gui_divider=1 (pełna kanwa gry)"
 sed -i 's/gui_divider : 2/gui_divider : 1/' "$BUILD_WEB/index.html"
 
+# can_close=1 wyłącza okno "Are you sure you want to navigate away?"
+# (pygbag rejestruje onbeforeunload tylko gdy can_close=0). Osadzona gra
+# nie powinna blokować odświeżania/wyjścia ze strony.
+echo ">> Wyłączam ostrzeżenie o opuszczaniu strony (can_close=1)"
+sed -i 's/can_close : 0/can_close : 1/' "$BUILD_WEB/index.html"
+
 # Wstrzykujemy własny styl ekranu ładowania (białe tło + granatowy komunikat).
 STYLE_FILE="$WEB_ROOT/scripts/loader-style.html"
 if [ -f "$STYLE_FILE" ]; then

@@ -40,6 +40,33 @@
 				margin-bottom: 2rem;
 			}
 			.game-actions .button { margin: 0 .35rem .5rem .35rem; }
+
+			/* Przycisk pełnego ekranu pokazujemy TYLKO na dotyku (telefon/tablet);
+			   na desktopie go nie ma - tam zostaje normalny pasek adresu. */
+			#fs-btn { display: none; }
+			@media (pointer: coarse) { #fs-btn { display: inline-block; } }
+
+			/* Pełny ekran (jak YouTube): kontener wypełnia ekran, a gra zostaje
+			   wyśrodkowana w proporcji 16:9 na czarnym tle — bez zniekształceń.
+			   Klasę .fs przełącza JS na zdarzeniu fullscreenchange (unikamy
+			   pułapki z pseudo-klasami :fullscreen/:-webkit-full-screen, które
+			   w liście selektorów potrafią unieważnić całą regułę). */
+			.game-embed.fs {
+				width: 100vw; height: 100vh;
+				max-width: none;
+				margin: 0;
+				padding: 0;
+				border-radius: 0;
+				background: #000;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+			}
+			.game-embed.fs iframe {
+				position: static;
+				width: min(100vw, 177.78vh);   /* największy prostokąt 16:9 */
+				height: min(56.25vw, 100vh);
+			}
 		</style>
 	</head>
 
@@ -78,18 +105,49 @@
 				<section id="content" class="main">
 
 					{{ if .Params.embed }}
-						<div class="game-embed">
+						<div class="game-embed" id="game-embed">
 							<iframe src="{{ .Params.embed | absURL }}"
 							        title="{{ .Title }}"
 							        allow="autoplay; fullscreen; gamepad"
 							        allowfullscreen></iframe>
 						</div>
 						<div class="game-actions">
-							<a href="{{ .Params.embed | absURL }}" target="_blank" rel="noopener" class="button primary">Otwórz na pełnym ekranie</a>
+							<a href="{{ .Params.embed | absURL }}" target="_blank" rel="noopener" class="button primary" id="fs-btn">Pełny ekran</a>
 							{{ if .Params.github }}
 								<a href="{{ .Params.github }}" target="_blank" rel="noopener" class="button">Kod na GitHub</a>
 							{{ end }}
 						</div>
+						<script>
+						(function () {
+							var btn = document.getElementById("fs-btn");
+							var box = document.getElementById("game-embed");
+							if (!btn || !box) return;
+							var req = box.requestFullscreen || box.webkitRequestFullscreen || box.msRequestFullscreen;
+
+							// .fs = klasa stylu pełnego ekranu (16:9, czarne tło).
+							function sync() {
+								var fsEl = document.fullscreenElement || document.webkitFullscreenElement;
+								box.classList.toggle("fs", fsEl === box);
+							}
+							document.addEventListener("fullscreenchange", sync);
+							document.addEventListener("webkitfullscreenchange", sync);
+
+							btn.addEventListener("click", function (e) {
+								// Przycisk widoczny tylko na dotyku (CSS @media pointer:coarse).
+								// Wchodzimy w pełny ekran i blokujemy orientację poziomą
+								// (jak YouTube). iOS Safari nie wspiera FS dla elementów != wideo
+								// -> wtedy link otworzy grę w nowej karcie (fallback).
+								if (!req) return;
+								e.preventDefault();
+								var done = req.call(box);
+								Promise.resolve(done).then(function () {
+									if (screen.orientation && screen.orientation.lock) {
+										screen.orientation.lock("landscape").catch(function () {});
+									}
+								}).catch(function () {});
+							});
+						})();
+						</script>
 					{{ end }}
 
 					<div class="article_content_post_flex">
