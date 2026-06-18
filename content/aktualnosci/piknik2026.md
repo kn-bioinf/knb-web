@@ -12,7 +12,7 @@ image = 'images/piknik2026.jpg'
 
 13 kwietnia braliśmy udział w Pikniku Naukowym organizowanym przez Centrum Nauki Kopernik wraz z Polskim Radiem!
 
-Tym razem zaprezentowalismy grę o aktynie o nazwie KinesinQuest!
+Tym razem zaprezentowalismy grę o kinezynie o nazwie KinesinQuest!
 
 Bardzo dziękujemy Wydziałowi Biologii za możliwość współpracy z Wami na tym wydarzeniu!
 
