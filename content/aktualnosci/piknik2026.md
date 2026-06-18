@@ -11,6 +11,9 @@ image = 'images/piknik2026.jpg'
 # Piknik Naukowy 2026! #
 
 13 kwietnia braliśmy udział w Pikniku Naukowym organizowanym przez Centrum Nauki Kopernik wraz z Polskim Radiem!
+
 Tym razem zaprezentowalismy grę o aktynie o nazwie KinesinQuest!
+
 Bardzo dziękujemy Wydziałowi Biologii za możliwość współpracy z Wami na tym wydarzeniu!
+
 Do zobaczenia za rok!
