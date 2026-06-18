@@ -1,6 +1,6 @@
 +++
 title = 'Piknik Naukowy 2026!'
-date = '2026-06-19'
+date = '2026-06-17'
 draft = 'false'
 tags = ['nauka', 'zabawa']
 summary = "13 czerwca braliśmy udział w Pikniku Naukowym!"
