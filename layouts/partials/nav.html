@@ -11,7 +11,7 @@
 		<li><a href="{{ if .IsHome }}#intro{{ else }}{{ $home }}#intro{{ end }}"{{ if .IsHome }} class="active"{{ end }}>O nas</a></li>
 		<li><a href="{{ if .IsHome }}#aktualnosci{{ else }}{{ $home }}#aktualnosci{{ end }}"{{ if $isAktualnosci }} class="active"{{ end }}>Aktualności</a></li>
 		<li><a href="{{ if .IsHome }}#zarzad{{ else }}{{ $home }}#zarzad{{ end }}">Zarząd</a></li>
-		<li><a href="{{ "projekty/" | relURL }}"{{ if $isProjekty }} class="active"{{ end }}>Projekty</a></li>
+		<li><a href="{{ if .IsHome }}#projekty{{ else }}{{ "projekty/" | relURL }}{{ end }}"{{ if $isProjekty }} class="active"{{ end }}>Projekty</a></li>
 		<li><a href="{{ if .IsHome }}#dolacz{{ else }}{{ $home }}#dolacz{{ end }}">Dołącz</a></li>
 		<li><a href="{{ if .IsHome }}#kontakt{{ else }}{{ $home }}#kontakt{{ end }}">Kontakt</a></li>
 	</ul>

@@ -99,6 +99,35 @@
 
 				</section>
 
+				<!-- Projekty - podgląd -->
+				<section id="projekty" class="main special">
+					<header class="major">
+						<h2 class='header22'>Projekty</h2>
+					</header>
+
+					{{ range first 3 (sort (where .Site.RegularPages "Section" "projekty") ".Date" "desc") }}
+					<article>
+						<div class="article-content">
+							<h3>{{ .Params.Title }}</h3>
+							<p>{{ .Params.Summary }}</p>
+							<a href="{{ .RelPermalink }}" class="button primary">Otwórz projekt</a>
+							{{ if .Params.github }}
+								<a href="{{ .Params.github }}" target="_blank" rel="noopener" class="button">Kod na GitHub</a>
+							{{ end }}
+						</div>
+
+						{{ if .Params.image }}
+							<span class="image_posts">
+								<img src="{{ .Params.image | absURL }}" alt="{{ .Title }}">
+							</span>
+						{{ end }}
+					</article>
+					{{ end }}
+
+					<p></p>
+					<a href="{{ "projekty/" | relURL }}" class="button primary">Wszystkie projekty</a>
+				</section>
+
 				<!-- Second Section - Członkowie  -->
 				<section id="zarzad" class="main special">
 					
