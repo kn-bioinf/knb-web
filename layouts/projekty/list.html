@@ -22,29 +22,8 @@
 		<!-- Wrapper -->
 		<div id="wrapper">
 
-			<!-- Header -->
-			<header id="header" class="alt">
-				<a href="{{ "/" | absURL }}">
-					<span class="logo">
-						<img src="{{ "images/logo_kola.jpg" | absURL }}" alt="Logo" />
-					</span>
-				</a>
-				<h1>Projekty</h1>
-			</header>
-
-			<!-- Hamburger toggle button for mobile -->
-			<button id="nav-toggle">☰</button>
-
-			<nav id="nav">
-			    <ul>
-				<li><a href="https://knbioinf.mimuw.edu.pl/#intro">O nas</a></li>
-				<li><a href="https://knbioinf.mimuw.edu.pl/#aktualnosci">Aktualności</a></li>
-				<li><a href="https://knbioinf.mimuw.edu.pl/#zarzad">Zarząd</a></li>
-				<li><a href="{{ "projekty/" | absURL }}">Projekty</a></li>
-				<li><a href="https://knbioinf.mimuw.edu.pl/#dolacz">Dołącz</a></li>
-				<li><a href="https://knbioinf.mimuw.edu.pl/#kontakt">Kontakt</a></li>
-			    </ul>
-			</nav>
+			{{ partial "header.html" . }}
+			{{ partial "nav.html" . }}
 
 			<!-- Main -->
 			<div id="main">
