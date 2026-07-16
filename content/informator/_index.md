@@ -2,6 +2,4 @@
 title = 'Informator Bioinformatyka'
 +++
 
-Zbiór wskazówek dla osób zaczynających przygodę z bioinformatyką —
-przydatne linki, narzędzia i praktyczne porady od członków Koła.
-Tablicę możesz przeglądać poniżej albo otworzyć w Miro na pełnym ekranie.
+Bioinformatyczne drzewko skupiające ze sobą bioinformatyczne przedmioty i sugerowaną kolejność ich wykonywania. Drzewko możesz przeglądać poniżej albo otworzyć w Miro na pełnym ekranie.
