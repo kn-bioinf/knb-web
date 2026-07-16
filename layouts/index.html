@@ -79,7 +79,7 @@
 							
 							<p>{{ .Params.Summary }}</p>
 							<p>{{ .Params.Date.Format "2.01.2006" }}</p>
-							<a href="{{ .Permalink }}" class="button primary">Czytaj więcej</a>
+							<a href="{{ .RelPermalink }}" class="button primary">Czytaj więcej</a>
 						
 						</div>
 	
@@ -95,7 +95,7 @@
 					{{ end }}
 	
 					<p></p>
-					<a href="{{ "aktualnosci" | absURL }}" class="button primary">Pozostałe wydarzenia</a>
+					<a href="{{ "aktualnosci/" | relURL }}" class="button primary">Pozostałe wydarzenia</a>
 
 				</section>
 
