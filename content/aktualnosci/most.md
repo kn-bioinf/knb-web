@@ -1,6 +1,6 @@
 +++
 title = 'Maraton Organizacji Studenckich'
-date = '2025-11-02'
+date = '2026-11-02'
 draft = 'false'
 tags = ['nauka', 'zabawa']
 summary = "29 października braliśmy udział w wydarzeniu MOSt"
